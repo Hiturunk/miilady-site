@@ -1,11 +1,5 @@
 .container {
-  position: relative;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: #333;
+  padding: 0 2rem;
 }
 
 .main {
@@ -106,40 +100,3 @@
     flex-direction: column;
   }
 }
-
-.gradientBackground {
-  background: linear-gradient(to bottom, #D9F6FF, #FFFFFF);
-}
-
-.buttonWrapper {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-} 
- 
-.logoWrapper {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-}
-
-.logo {
-  width: 250px; /* Adjust the width and height as needed */
-  height: 80px;
-}  
-
-.japanWrapper {
-  position: absolute;
-  top: 90px;
-  left: 20px;
-}
-
-.japanLogo {
-  width: 75%; /* Adjust the width and height as needed */
-  height: 75%;
-}
-  
-  
-
-  
-  
