@@ -16,10 +16,6 @@ const Home: NextPage = () => {
 	<div className={styles.logoWrapper}>
 	  <Image src="/SVG/miilady.svg" alt="Logo" className={styles.logo} width={800} height={800} />
 	</div>
-	
-	<div className={styles.japanWrapper}>
-	  <Image src="/SVG/japan.svg" alt="Logo" className={styles.japanLogo} width={800} height={800} />
-	</div>
 
 
       <div className={styles.buttonWrapper}>
