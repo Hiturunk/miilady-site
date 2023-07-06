@@ -14,7 +14,7 @@ const Home: NextPage = () => {
       </Head>
 	  
 	<div className={styles.logoWrapper}>
-	  <Image src="/SVG/miilady.svg" alt="Logo" className={styles.logo} width={800} height={800} />
+	  <Image src="/SVG/miilady_logo.svg" alt="Logo" className={styles.logo} width={800} height={800} />
 	</div>
 
 
