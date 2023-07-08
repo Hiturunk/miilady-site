@@ -29,7 +29,7 @@ const Controls = ({ cameraPosition, targetPosition }) => {
       ref={controlsRef}
       args={[camera, gl.domElement]}
       autoRotate={false}
-      enableZoom={true}
+      enableZoom={false}
       enablePan={true}
       enableRotate={true}
       enableDamping={true} // Enable dampening
@@ -42,7 +42,7 @@ const Controls = ({ cameraPosition, targetPosition }) => {
 
 
 const MiiladyViewer = ({ fov = 1, modelPosition = [0, 0, 0], modelRotation = [0, 0, 0], cameraPosition = [0, 0, 5], targetPosition = [0, 1.2, 0] }) => (
-  <Canvas style={{ width: '45vw', height: '60vh' }}>
+  <Canvas style={{ width: '80vw', height: '60vh' }}>
     <ambientLight intensity={0.75} />
     <Controls cameraPosition={cameraPosition} targetPosition={targetPosition} />
     <Suspense fallback={null}>
