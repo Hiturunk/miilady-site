@@ -121,12 +121,15 @@
   position: absolute;
   top: 10px;
   left: 10px;
+  width: 20%; /* Adjust the width and maximum width as needed */
+  max-width: 250px;
 }
 
 .logo {
-  width: 250px; /* Adjust the width and height as needed */
-  height: 80px;
-}  
+  width: 100%; /* Make the logo width responsive to the parent element */
+  max-width: 250px; /* Maximum width of Logo */
+  height: auto; /* This will keep the aspect ratio intact */
+}
 
 .canvas-container {
   width: 80vw;
