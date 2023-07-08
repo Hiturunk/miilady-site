@@ -5,7 +5,13 @@ import { ConnectButton } from '@rainbow-me/rainbowkit';
 import styles from '../styles/Home.module.css';
 import MiiladyViewer from '../components/MiiladyViewer';
 
+const rollFunction = () => {
+  alert('Roll Button is clicked');
+}
 
+const mintFunction = () => {
+  alert('Mint Button is clicked');
+}
 
 
 const Home: NextPage = () => {
@@ -17,19 +23,23 @@ const Home: NextPage = () => {
         <link href="/favicon.ico" rel="icon" />
       </Head>
 	  
-	<div className={styles.logoWrapper}>
-	  <Image src="/SVG/miilady_logo.svg" alt="Logo" className={styles.logo} width={800} height={800} />
-	</div>
-
+      <div className={styles.logoWrapper}>
+        <Image src="/SVG/miilady_logo.svg" alt="Logo" className={styles.logo} width={800} height={800} />
+      </div>
 
       <div className={styles.buttonWrapper}>
         <ConnectButton />
       </div>
 
       <main className={styles.main}>
-        {/* Other content goes here */}
-		<MiiladyViewer fov={50} modelPosition={[0, 0.1, 0]} modelRotation={[Math.PI / 0.5, 1.5708, 0]} cameraPosition={[0, 2, 1.2]} targetPosition={[0, 1.1, 0]} />
-      </main>
+        <MiiladyViewer fov={50} modelPosition={[0, 0.1, 0]} modelRotation={[Math.PI / 0.5, 1.5708, 0]} cameraPosition={[0, 2, 1.2]} targetPosition={[0, 1.1, 0]} />
+
+        <div className={styles.actionButtons}>
+            <button onClick={rollFunction} className={styles.rollButton}>Roll</button>
+            <button onClick={mintFunction} className={styles.mintButton}>Mint</button>
+        </div>
+	  
+	  </main>
     </div>
   );
 };

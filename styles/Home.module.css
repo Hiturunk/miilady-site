@@ -132,6 +132,30 @@
   width: 80vw;
   height: 80vh;
 }
+
+
+.actionButtons {
+
+}
+
+
+.rollButton, .mintButton {
+  margin: 10px;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.rollButton {
+  background: #7795f8;
+  color: #fff;
+}
+
+.mintButton {
+  background: #f8ab41;
+  color: #fff;
+}
   
 
   
