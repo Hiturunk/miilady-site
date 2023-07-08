@@ -3,6 +3,9 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { ConnectButton } from '@rainbow-me/rainbowkit';
 import styles from '../styles/Home.module.css';
+import RotatingBox from '../components/RotatingBox';
+
+
 
 const Home: NextPage = () => {
   return (
@@ -24,6 +27,7 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         {/* Other content goes here */}
+		<RotatingBox />
       </main>
     </div>
   );
