@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Fragment+Mono&display=swap');
+
+.body {
+  font-family: "Fragment Mono", monospace;
+}
+
 .container {
   position: relative;
   min-height: 100vh;
@@ -115,20 +121,30 @@
   position: fixed;
   top: 10px;
   right: 10px;
+  z-index: 3;
 } 
- 
-.logoWrapper {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 20%; /* Adjust the width and maximum width as needed */
-  max-width: 250px;
-}
 
 .logo {
-  width: 100%; /* Make the logo width responsive to the parent element */
-  max-width: 250px; /* Maximum width of Logo */
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  width: 10%; /* Make the logo width responsive to the parent element */
   height: auto; /* This will keep the aspect ratio intact */
+  padding-left: 1%;
+  user-select: none;
+}
+
+@media only screen and (max-width: 1024px) {
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  width: 30%; /* Make the logo width responsive to the parent element */
+  height: auto; /* This will keep the aspect ratio intact */
+  padding-left: 1%;
+  user-select: none;
+}
+
 }
 
 .canvas-container {
@@ -143,21 +159,25 @@
 
 
 .rollButton, .mintButton {
+font-family: "Fragment Mono", monospace;
   margin: 10px;
-  padding: 15px 30px;
+  padding: 10px 30px;
   font-size: 1.2rem;
   border-radius: 5px;
   cursor: pointer;
+  z-index: 3;
 }
 
 .rollButton {
-  background: #7795f8;
-  color: #fff;
+  background: #BDE9C1;
+  color: #000;
+  z-index: 3;
 }
 
 .mintButton {
-  background: #f8ab41;
-  color: #fff;
+  background: #BDE9C1;
+  color: #000;
+  z-index: 3;
 }
   
 .viewerWrapper {
@@ -166,6 +186,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 2;
 }
 
 /* The following media query will take effect for screens with a width of 1024px or higher */
@@ -174,7 +195,37 @@
     width: 50%; /* takes up the half width of its parent on desktop */
     margin: 0 auto; /* centers the element horizontally */
     height: 70vh; /* takes up the half height of the viewport on desktop */
+	z-index: 2;
   }
 }
   
-  
+.Description {
+font-family: "Fragment Mono", monospace;	
+  position: absolute;
+  top: calc(50% - 22%);  /* adjust the px for vertical displacement */
+  left: calc(50% + 7%); /* adjust the px for horizontal displacement */
+  padding-right: 25%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background-color: rgba(180, 180, 180, 0.2); /* Semi-transparent black */
+  color: black; /* Text color */
+  text-align: right;
+  z-index: 1;
+  user-select: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .Description {
+  position: absolute;
+  top: calc(50% - 28%);  /* adjust the px for vertical displacement */
+  left: calc(50% + 7%); /* adjust the px for horizontal displacement */
+  padding-right: 2%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background-color: rgba(180, 180, 180, 0.2); /* Semi-transparent black */
+  color: black; /* Text color */
+  text-align: right;
+  z-index: 1;
+  user-select: none;
+  }
+}

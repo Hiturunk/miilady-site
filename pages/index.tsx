@@ -4,13 +4,14 @@ import Image from 'next/image';
 import { ConnectButton } from '@rainbow-me/rainbowkit';
 import styles from '../styles/Home.module.css';
 import MiiladyViewer from '../components/MiiladyViewer';
+import Description from '../components/Description';
 
 const rollFunction = () => {
-  alert('Roll Button is clicked');
+   alert('Roll Button is clicked');
 }
 
 const mintFunction = () => {
-  alert('Mint Button is clicked');
+   alert('Mint Button is clicked');
 }
 
 const Home: NextPage = () => {
@@ -31,13 +32,15 @@ const Home: NextPage = () => {
       </div>
 
       <main className={styles.main}>
+        <Description />
+
         <div className={styles.viewerWrapper}>
-          <MiiladyViewer fov={18} modelPosition={[0, 0.25, 0]} modelRotation={[Math.PI / 0.5, 1.5708, 0]} cameraPosition={[0, 0, 6]} targetPosition={[0, 1.1, 0]} />
+            <MiiladyViewer fov={18} modelPosition={[0, 0.25, 0]} modelRotation={[Math.PI / 0.5, 1.5708, 0]} cameraPosition={[0, 0, 6]} targetPosition={[0, 1.1, 0]} />
         </div>
         
         <div className={styles.actionButtons}>
-            <button onClick={rollFunction} className={styles.rollButton}>Roll</button>
-            <button onClick={mintFunction} className={styles.mintButton}>Mint</button>
+           <button onClick={rollFunction} className={styles.rollButton}>Roll</button>
+           <button onClick={mintFunction} className={styles.mintButton}>Mint</button>
         </div>
 	  
 	  </main>
