@@ -160,6 +160,21 @@
   color: #fff;
 }
   
+.viewerWrapper {
+  width: 80%; /* takes up the full width of its parent */
+  height: 80%; /* takes up the full height of the viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+/* The following media query will take effect for screens with a width of 1024px or higher */
+@media screen and (min-width: 1024px) {
+  .viewerWrapper {
+    width: 50%; /* takes up the half width of its parent on desktop */
+    margin: 0 auto; /* centers the element horizontally */
+    height: 70vh; /* takes up the half height of the viewport on desktop */
+  }
+}
   
   
