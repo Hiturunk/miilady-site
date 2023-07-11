@@ -6,8 +6,7 @@ import Controls from '../components/utils3D/MiiladyControls';
 
 const MiiladyViewer = ({
   fov = 1,
-  modelPosition = [0, 0, 0],
-  modelRotation = [0, 0, 0],
+  models = [],
   cameraPosition = [0, 0, 5],
   targetPosition = [0, 1.2, 0],
 }) => (
@@ -15,7 +14,9 @@ const MiiladyViewer = ({
     <ambientLight intensity={0.75} />
     <Controls fov={fov} cameraPosition={cameraPosition} targetPosition={targetPosition} />
     <Suspense fallback={null}>
-      <MiiladyModel url="/3D/miilady_demo.gltf" position={modelPosition} rotation={modelRotation} />
+      {models.map((model, index) => (
+        <MiiladyModel key={index} url={model.url} position={model.position} rotation={model.rotation} />
+      ))}
     </Suspense>
   </Canvas>
 );

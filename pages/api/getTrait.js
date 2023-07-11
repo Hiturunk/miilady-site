@@ -1,3 +1,4 @@
+//getTraits.js
 import { traits } from 'components/traits.json';
 
 export function getTrait() {
