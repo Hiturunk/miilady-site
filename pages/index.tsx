@@ -31,7 +31,7 @@ const Home: NextPage = () => {
       </div>
 
       <main className={styles.main}>
-        <CharacterGenerator rollFunction={rollFunction} mintFunction={mintFunction} />
+        <CharacterGenerator />
       </main>
     </div>
   );
