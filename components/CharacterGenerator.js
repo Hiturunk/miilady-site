@@ -41,7 +41,7 @@ function CharacterGenerator() {
     <div>
       <MiiladyViewer fov={18} models={models} cameraPosition={[0, 0, 6]} targetPosition={[0, 1.1, 0]} />
       <Description traits={traits} />
-      <button onClick={generateCharacter}>Regenerate Character</button>
+      <button className={styles.rollButton} onClick={generateCharacter}>Roll</button>
     </div>
   );
 }
