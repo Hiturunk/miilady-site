@@ -1,0 +1,74 @@
+{
+  "traits": [
+    {
+      "type": "Hair",
+      "name": "Short",
+      "description": "Short and stylish hair.",
+      "model_name": "short_hair",
+      "probability": 0.5
+    },
+    {
+      "type": "Hair",
+      "name": "Long",
+      "description": "Beautifully grown long hair",
+      "model_name": "long_hair",
+      "probability": 0.5
+    },
+    {
+      "type": "Shirt",
+      "name": "Polka-dot",
+      "description": "Classic Polka-dot print for a dapper look.",
+      "model_name": "polka_dot_shirt",
+      "probability": 0.5
+    },
+    {
+      "type": "Shirt",
+      "name": "Stripes",
+      "description": "Bold horizontal stripes for a casual look.",
+      "model_name": "stripes_shirt",
+      "probability": 0.5
+    },
+    {
+      "type": "Skirt",
+      "name": "Pleated",
+      "description": "Elegant and stylish pleated skirt.",
+      "model_name": "pleated_skirt",
+      "probability": 0.5
+    },
+    {
+      "type": "Skirt",
+      "name": "Sporty",
+      "description": "Cool and casual sporty skirt.",
+      "model_name": "sporty_skirt",
+      "probability": 0.5
+    },
+    {
+      "type": "Hat",
+      "name": "Cap",
+      "description": "Trendy signature cap.",
+      "model_name": "cap_hat",
+      "probability": 0.5
+    },
+    {
+      "type": "Hat",
+      "name": "Beret",
+      "description": "Vintage and chic beret.",
+      "model_name": "beret_hat",
+      "probability": 0.5
+    },
+    {
+      "type": "Glasses",
+      "name": "Round",
+      "description": "Classic round glasses that never go out of style.",
+      "model_name": "round_glasses",
+      "probability": 0.5
+    },
+    {
+      "type": "Glasses",
+      "name": "Square",
+      "description": "Trendy square glasses for extra finesse.",
+      "model_name": "square_glasses",
+      "probability": 0.5
+    }
+  ]
+}

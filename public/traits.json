@@ -1,0 +1,10 @@
+{
+    "Hat": ["Hat 1", "Hat 2", "Hat 3", "Hat 4", "Hat 5"],
+    "Shirt": ["Shirt 1", "Shirt 2", "Shirt 3", "Shirt 4", "Shirt 5"],
+    "Pants": ["Pants 1", "Pants 2", "Pants 3", "Pants 4", "Pants 5"],
+    "Socks": ["Socks 1", "Socks 2", "Socks 3", "Socks 4", "Socks 5"],
+    "Headwear": ["Headwear 1", "Headwear 2", "Headwear 3", "Headwear 4", "Headwear 5"],
+    "Glasses": ["Glasses 1", "Glasses 2", "Glasses 3", "Glasses 4", "Glasses 5"],
+    "Face Type": ["Face Type 1", "Face Type 2", "Face Type 3", "Face Type 4", "Face Type 5"],
+    "Core": ["Core 1", "Core 2", "Core 3", "Core 4", "Core 5"]
+}

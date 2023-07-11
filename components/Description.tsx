@@ -2,9 +2,13 @@
 import React from 'react';
 import styles from '../styles/Home.module.css';
 
-const Description = () => {
+const Description = ({traits}) => {
+  const traitList = traits.length > 0 ? traits.map(trait => trait.description).join(", ") : "No traits received.";
+
   return (
-      <div className={styles.Description}>TOP TOMPE-L’OEIL, KARL LAGERFELD. CULOTTE, DIM VAGUE, AS29. SANDALES. GIOGRIO ARMANI CLAUDIE PIERLOT SKIRT MAQUILLAGE M.A.C COSMETICS ARISTNAME HAIR: CLASSIC LONG EYES: NEOCHIBI BLUE</div> 
+    <div className={styles.Description}>
+      {traitList}
+    </div>
   );
 };
 
