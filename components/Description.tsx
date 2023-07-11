@@ -1,8 +1,15 @@
-// Description.tsx
 import React from 'react';
 import styles from '../styles/Home.module.css';
 
-const Description = ({traits}) => {
+type Trait = {
+  description: string;
+}
+
+type DescriptionProps = {
+  traits: Trait[];
+}
+
+const Description: React.FC<DescriptionProps> = ({traits}) => {
   const traitList = traits.length > 0 ? traits.map(trait => trait.description).join(", ") : "No traits received.";
 
   return (
