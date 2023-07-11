@@ -1,6 +1,13 @@
 {
   "traits": [
     {
+      "type": "Body",
+      "name": "Miilady_Demo",
+      "description": "A demo Miilady with ",
+      "model_name": "miilady_demo",
+      "probability": 0.5
+    },
+    {
       "type": "Hair",
       "name": "Short",
       "description": "Short and stylish hair.",

@@ -66,6 +66,7 @@
   margin: 0 0 2rem;
   line-height: 1.5;
   font-size: 1.5rem;
+  z-index: 1; 
 }
 
 .grid {
