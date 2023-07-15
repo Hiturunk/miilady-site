@@ -230,3 +230,60 @@ font-family: "Fragment Mono", monospace;
   user-select: none;
   }
 }
+
+/* styles/InformationWindow.module.css */
+.window {
+  position: fixed;
+  top: 25%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  margin-top: 20px;
+  margin-left: 20px;
+  height: 22vh;
+  width: 23vh;
+  background-color: white;
+  border: 1px solid grey;
+  z-index: 1000;
+}
+
+
+.handle {
+  cursor: move;
+  width: 100%;
+  height: 2vh;
+  background: linear-gradient(to right, lightblue, #0e76fd);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+
+.closeButton {
+  position: absolute;
+  top: 2px;
+  right: 1px;
+  margin-right: 1px;
+  cursor: pointer;
+}
+
+
+.content {
+  padding: 10px;
+  font-family: "Fragment Mono", monospace;
+  overflow: auto;
+  width: 23vh;
+  height: 20vh;
+}
+
+
+
+.infoButton {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  background-color: blue;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
