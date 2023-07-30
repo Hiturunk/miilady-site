@@ -1,7 +1,12 @@
 //getTraits.js
 import { traits } from 'components/traits.json';
 
-export function getTrait() {
+export async function getTrait() {
+  // Ensure traits is loaded
+  if (!traits) {
+    throw new Error("Traits not loaded!");
+  }
+
   // Get unique trait types
   const traitTypes = [...new Set(traits.map(item => item.type))];
 
@@ -14,8 +19,11 @@ export function getTrait() {
     // Normalize probabilities: compute sum of all probabilities
     let probSum = traitsOfType.reduce((acc, trait) => acc + trait.probability, 0);
 
-    // Generate a random number between 0 and the sum of probabilities
-    let randNum = Math.random() * probSum;
+    // Generate a random number between 0 (non-inclusive) and the sum of probabilities (non-inclusive)
+    let randNum;
+    do {
+        randNum = Math.random() * probSum;
+    } while(randNum === 0 || randNum === probSum);
 
     let cumulativeProb = 0;
     for(let i = 0; i < traitsOfType.length; i++) {

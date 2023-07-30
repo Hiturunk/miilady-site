@@ -187,7 +187,7 @@ font-family: "Fragment Mono", monospace;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 2;
+  z-index: 3;
 }
 
 /* The following media query will take effect for screens with a width of 1024px or higher */
