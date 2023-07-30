@@ -20,6 +20,7 @@ export async function getTrait() {
     let probSum = traitsOfType.reduce((acc, trait) => acc + trait.probability, 0);
 
     // Generate a random number between 0 (non-inclusive) and the sum of probabilities (non-inclusive)
+    // this method helps prevent missing traits during the selection  
     let randNum;
     do {
         randNum = Math.random() * probSum;

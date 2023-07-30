@@ -170,9 +170,14 @@ font-family: "Fragment Mono", monospace;
 }
 
 .rollButton {
-  background: #BDE9C1;
+  background-color: #BDE9C1;
   color: #000;
   z-index: 3;
+  transition: scale 0.5s ease;
+}
+
+.rollButton:hover {
+  scale: 1.1;
 }
 
 .mintButton {
@@ -187,7 +192,7 @@ font-family: "Fragment Mono", monospace;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 3;
+  z-index: 2;
 }
 
 /* The following media query will take effect for screens with a width of 1024px or higher */
