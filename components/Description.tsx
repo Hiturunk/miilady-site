@@ -10,7 +10,7 @@ type DescriptionProps = {
 }
 
 const Description: React.FC<DescriptionProps> = ({traits}) => {
-  const traitList = traits.length > 0 ? traits.map(trait => trait.description).join(", ") : "No traits received.";
+  const traitList = traits.length > 0 ? traits.map(trait => trait.description).join("") : "No traits received.";
 
   return (
     <div className={styles.Description}>

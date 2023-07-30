@@ -3,77 +3,77 @@
     {
       "type": "Body",
       "name": "Miilady_Demo",
-      "description": "A demo Miilady with ",
+      "description": "MIILADY WITH ",
       "model_name": "miilady_demo.gltf",
       "probability": 0.5
     },
     {
       "type": "Hair",
       "name": "Short",
-      "description": "Short and stylish hair.",
+      "description": "SHORT BOB AYANAMI CUT ",
       "model_name": "short_hair.gltf",
       "probability": 0.5
     },
     {
       "type": "Hair",
       "name": "Long",
-      "description": "Beautifully grown long hair",
+      "description": "HIME CUT ",
       "model_name": "long_hair.gltf",
       "probability": 0.5
     },
     {
       "type": "Shirt",
       "name": "Polka-dot",
-      "description": "Classic Polka-dot print for a dapper look.",
+      "description": "POLKA DOT LOVE ",
       "model_name": "polka_dot_shirt.gltf",
       "probability": 0.5
     },
     {
       "type": "Shirt",
       "name": "Stripes",
-      "description": "Bold horizontal stripes for a casual look.",
+      "description": "STRIPED SHIRT ",
       "model_name": "stripes_shirt.gltf",
       "probability": 0.5
     },
     {
       "type": "Skirt",
       "name": "Pleated",
-      "description": "Elegant and stylish pleated skirt.",
+      "description": "PLEATED SKIRT ",
       "model_name": "pleated_skirt.gltf",
       "probability": 0.5
     },
     {
       "type": "Skirt",
       "name": "Sporty",
-      "description": "Cool and casual sporty skirt.",
+      "description": "TENNIS SKIRT ",
       "model_name": "sporty_skirt.gltf",
       "probability": 0.5
     },
     {
       "type": "Hat",
       "name": "Cap",
-      "description": "Trendy signature cap.",
+      "description": "SIGNATURE CAP ",
       "model_name": "cap_hat.gltf",
       "probability": 0.5
     },
     {
       "type": "Hat",
       "name": "Beret",
-      "description": "Vintage and chic beret.",
+      "description": "CHIC BERET ",
       "model_name": "beret_hat.gltf",
       "probability": 0.5
     },
     {
       "type": "Glasses",
       "name": "Round",
-      "description": "Classic round glasses that never go out of style.",
+      "description": "ROUNDED FRAME GLASSES ",
       "model_name": "round_glasses.gltf",
       "probability": 0.5
     },
     {
       "type": "Glasses",
       "name": "Square",
-      "description": "Trendy square glasses for extra finesse.",
+      "description": "SQUARE FRAMED GLASSES ",
       "model_name": "square_glasses.gltf",
       "probability": 0.5
     }
