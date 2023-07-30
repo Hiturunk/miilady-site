@@ -27,7 +27,7 @@ const MiiladyControls = ({ cameraPosition, targetPosition, fov = 20 }) => {
       args={[camera, gl.domElement]}
       autoRotate={false}
       enableZoom={false}
-      enablePan={true}
+      enablePan={false}
       enableRotate={true}
       enableDamping={true}
       dampingFactor={0.04}

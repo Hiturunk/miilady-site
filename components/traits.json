@@ -31,7 +31,7 @@
     {
       "type": "Shirt",
       "name": "Stripes",
-      "description": "STRIPED SHIRT ",
+      "description": "STRIPED TOP ",
       "model_name": "stripes_shirt.gltf",
       "probability": 0.5
     },
@@ -73,7 +73,7 @@
     {
       "type": "Glasses",
       "name": "Square",
-      "description": "SQUARE FRAMED GLASSES ",
+      "description": "SQUARE FRAMED SPECTACLES ",
       "model_name": "square_glasses.gltf",
       "probability": 0.5
     }
