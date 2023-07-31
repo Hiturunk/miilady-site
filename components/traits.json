@@ -59,10 +59,24 @@
     {
       "type": "Hat",
       "name": "Beret",
-      "description": "CHIC BERET ",
+      "description": "CHIC CLEMINTINE BERET ",
       "model_name": "beret_hat.gltf",
       "probability": 0.5
     },
+    {
+      "type": "Footwear",
+      "name": "Red Boots",
+      "description": "ICONIC RED BOOTS ",
+      "model_name": "boots_red.gltf",
+      "probability": 0.25
+    },
+    {
+      "type": "Footwear",
+      "name": "No shoes",
+      "description": "",
+      "model_name": "glasses_none.gltf",
+      "probability": 0.75
+    },          
     {
       "type": "Glasses",
       "name": "Round",
