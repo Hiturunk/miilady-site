@@ -181,9 +181,14 @@ font-family: "Fragment Mono", monospace;
 }
 
 .mintButton {
-  background: #BDE9C1;
+  background-color: #BDE9C1;
   color: #000;
   z-index: 3;
+  transition: scale 0.5s ease;
+}
+
+.mintButton:hover {
+  scale: 1.1;
 }
   
 .viewerWrapper {

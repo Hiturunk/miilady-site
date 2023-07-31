@@ -76,6 +76,13 @@
       "description": "SQUARE FRAMED SPECTACLES ",
       "model_name": "square_glasses.gltf",
       "probability": 0.5
-    }
+    },
+    {
+      "type": "Glasses",
+      "name": "None",
+      "description": "",
+      "model_name": "glasses_none.gltf",
+      "probability": 0.5
+    }    
   ]
 }

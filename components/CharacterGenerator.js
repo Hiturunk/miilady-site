@@ -5,6 +5,10 @@ import Description from '../components/Description';
 import MiiladyViewer from '../components/MiiladyViewer';
 import styles from '../styles/Home.module.css';
 
+const mintCharacter = () => {
+  alert("Mint button has been pressed");
+};
+
 function CharacterGenerator() {
   const [traits, setTraits] = useState([]);
   const [models, setModels] = useState([]);
@@ -42,6 +46,7 @@ function CharacterGenerator() {
       <MiiladyViewer fov={18} models={models} cameraPosition={[0, 0, 6]} targetPosition={[0, 1.1, 0]} />
       <Description traits={traits} />
       <button className={styles.rollButton} onClick={generateCharacter}>Roll</button>
+      <button className={styles.mintButton} onClick={mintCharacter}>Mint</button>
     </div>
   );
 }
