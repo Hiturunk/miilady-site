@@ -10,63 +10,63 @@
     {
       "type": "Hair",
       "name": "Short",
-      "description": "A SHORT BOB AYANAMI CUT ",
+      "description": "SHORT BOB AYANAMI CUT ",
       "model_name": "short_hair.gltf",
       "probability": 0.5
     },
     {
       "type": "Hair",
       "name": "Long",
-      "description": "A PROPER HIME CUT ",
+      "description": "HIME CUT ",
       "model_name": "long_hair.gltf",
       "probability": 0.5
     },
     {
       "type": "Shirt",
       "name": "Polka-dot",
-      "description": "ACCOMPANIED BY POLKA DOT LOVE, ",
+      "description": "POLKA DOT LOVE ",
       "model_name": "polka_dot_shirt.gltf",
       "probability": 0.5
     },
     {
       "type": "Shirt",
       "name": "Stripes",
-      "description": "COMPLIMENTED BY A STRIPED TOP, ",
+      "description": "STRIPED TOP ",
       "model_name": "stripes_shirt.gltf",
       "probability": 0.5
     },
     {
       "type": "Skirt",
       "name": "Pleated",
-      "description": "A CUTE PLEATED SKIRT, ",
+      "description": "PLEATED SKIRT ",
       "model_name": "pleated_skirt.gltf",
       "probability": 0.5
     },
     {
       "type": "Skirt",
       "name": "Sporty",
-      "description": "A SPORTY TENNIS SKIRT, ",
+      "description": "TENNIS SKIRT ",
       "model_name": "sporty_skirt.gltf",
       "probability": 0.5
     },
     {
       "type": "Hat",
       "name": "Cap",
-      "description": "THE SIGNATURE CAP, ",
+      "description": "SIGNATURE CAP ",
       "model_name": "cap_hat.gltf",
       "probability": 0.5
     },
     {
       "type": "Hat",
       "name": "Beret",
-      "description": "TRENDY CLEMINTINE BERET, ",
+      "description": "CHIC CLEMINTINE BERET ",
       "model_name": "beret_hat.gltf",
       "probability": 0.5
     },
     {
       "type": "Footwear",
       "name": "Red Boots",
-      "description": "ICONIC RED BOOTS, ",
+      "description": "ICONIC RED BOOTS ",
       "model_name": "boots_red.gltf",
       "probability": 0.25
     },
@@ -80,21 +80,21 @@
     {
       "type": "Glasses",
       "name": "Round",
-      "description": "AND ROUNDED FRAME GLASSES ",
+      "description": "ROUNDED FRAME GLASSES ",
       "model_name": "round_glasses.gltf",
       "probability": 0.5
     },
     {
       "type": "Glasses",
       "name": "Square",
-      "description": "AND SQUARE FRAMED SPECTACLES ",
+      "description": "SQUARE FRAMED SPECTACLES ",
       "model_name": "square_glasses.gltf",
       "probability": 0.5
     },
     {
       "type": "Glasses",
       "name": "None",
-      "description": "AND ANIME EYES THAT PERSUADE ME",
+      "description": "",
       "model_name": "glasses_none.gltf",
       "probability": 0.5
     }    
