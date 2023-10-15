@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@rainbow-me/rainbowkit": "^1.0.4",
-    "@react-three/drei": "^9.78.1",
+    "@react-three/drei": "^9.88.2",
     "@react-three/fiber": "^8.13.4",
     "fs": "^0.0.1-security",
     "next": "^13.4.3",

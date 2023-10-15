@@ -4,6 +4,8 @@ import { useEffect, useState } from 'react';
 import Description from '../components/Description';
 import MiiladyViewer from '../components/MiiladyViewer';
 import styles from '../styles/Home.module.css';
+import Image from 'next/image';
+
 
 const mintCharacter = () => {
   alert("Mint button has been pressed");
@@ -41,14 +43,24 @@ function CharacterGenerator() {
     setModels(newModels);
   }, [traits]);
 
-  return (
+return (
     <div>
-      <MiiladyViewer fov={18} models={models} cameraPosition={[0, 0, 6]} targetPosition={[0, 1.1, 0]} />
-      <Description traits={traits} />
-      <button className={styles.rollButton} onClick={generateCharacter}>Roll</button>
-      <button className={styles.mintButton} onClick={mintCharacter}>Mint</button>
+        <MiiladyViewer fov={18} models={models} cameraPosition={[0, 0, 6]} targetPosition={[0, 1.1, 0]} />
+        <Description traits={traits} />
+        <div className={styles.buttonContainer}>
+            <button onClick={generateCharacter} className={styles.footerRollButton}>🎲</button>
+            <button onClick={mintCharacter} className={styles.footerMintButton}>✓</button>
+        </div>
+        <footer className={styles.footer}>
+            {/* Miilady Logo added to the footer */}
+            <div className={styles.logoWrapper}>
+              <Image src="/SVG/miilady_logo.svg" alt="Miilady Logo" className={styles.logo} width={100} height={100} />
+            </div>
+            
+            {/* Other footer content, if any, can be placed here */}
+        </footer>
     </div>
-  );
+);
 }
 
 export default CharacterGenerator;
