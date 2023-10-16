@@ -138,6 +138,9 @@
 .canvas-container {
   width: 80vw;
   height: 80vh;
+    image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges; /* Firefox */
+  image-rendering: -webkit-crisp-edges; /* Webkit (Safari/Chrome) */
 }
 
 
@@ -150,6 +153,7 @@
   justify-content: center;
   align-items: center;
   z-index: 2;
+  
 }
 
 /* The following media query will take effect for screens with a width of 1024px or higher */
@@ -175,6 +179,9 @@ font-family: "Fragment Mono", monospace;
   text-align: right;
   z-index: 1;
   user-select: none;
+    image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges; /* Firefox */
+  image-rendering: -webkit-crisp-edges; /* Webkit (Safari/Chrome) */
 }
 
 @media only screen and (max-width: 1024px) {
@@ -191,21 +198,6 @@ font-family: "Fragment Mono", monospace;
   z-index: 1;
   user-select: none;
   }
-}
-
-/* styles/InformationWindow.module.css */
-.window {
-  position: fixed;
-  top: 25%;
-  left: 10%;
-  transform: translate(-50%, -50%);
-  margin-top: 20px;
-  margin-left: 20px;
-  height: 22vh;
-  width: 23vh;
-  background-color: white;
-  border: 1px solid grey;
-  z-index: 1000;
 }
 
 
@@ -289,8 +281,42 @@ font-family: "Fragment Mono", monospace;
   cursor: not-allowed;
 }
 
-.canvas {
-  image-rendering: pixelated;
-  image-rendering: -moz-crisp-edges; /* Firefox */
-  image-rendering: -webkit-crisp-edges; /* Webkit (Safari/Chrome) */
+
+.buttonRotateContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 75%;
+  padding: 10px 20px;
+  background-color: #f5f5f500;
+  border-radius: 8px;
+  /* Positioning */
+  position: absolute; /* or use fixed if you want it to stay in the same position even when scrolling */
+  bottom: 10%; /* Adjust this value to move it higher or lower */
+  left: 50%; /* This, combined with the transform below, centers the container horizontally */
+  transform: translateX(-50%); /* Center the container */
+  z-index: 2;
+}
+
+.rotateButtonRight, .rotateButtonLeft {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  background-color: #b5bcc500;
+  transition: transform 0.4s; 
+  transform: scale(1); /* Default scale is 1 (no scaling) */
+}
+
+.rotateButtonRight:hover, .rotateButtonLeft:hover {
+  transform: scale(1.2); /* Scale up by 10% on hover; adjust as desired */
+}
+
+.icon {
+  margin-right: 10px;
+  width: 100px;
+  height: 100px;
 }

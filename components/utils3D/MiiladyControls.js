@@ -28,7 +28,7 @@ const MiiladyControls = ({ cameraPosition, targetPosition, fov = 20 }) => {
       autoRotate={false}
       enableZoom={false}
       enablePan={false}
-      enableRotate={true}
+      enableRotate={false}
       enableDamping={true}
       dampingFactor={0.04}
       maxPolarAngle={Math.PI / 2.1}

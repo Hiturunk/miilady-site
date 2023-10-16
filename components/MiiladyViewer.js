@@ -12,7 +12,7 @@ const MiiladyViewer = ({
   const [dpr, setDpr] = useState([1, 1]);  // default to [1, 1]
 
   useEffect(() => {
-    setDpr([0.4, 0.4]);  // Setting it to half resolution
+    setDpr([0.5, 0.5]);  // Setting it to half resolution
   }, []);
 
   return (
@@ -20,7 +20,6 @@ const MiiladyViewer = ({
       <Canvas 
         style={{ width: '100%', height: '100%' }}
         dpr={dpr}
-        antialias={false}
       >
         <ambientLight intensity={3} color={'#8498ad'} />
         <directionalLight position={[5, 10, 20]} intensity={1} color={'#ffe4b5'} />
