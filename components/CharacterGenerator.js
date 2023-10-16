@@ -45,7 +45,7 @@ function CharacterGenerator() {
 
 return (
     <div>
-        <MiiladyViewer fov={18} models={models} cameraPosition={[0, 0, 6]} targetPosition={[0, 1.1, 0]} />
+        <MiiladyViewer fov={10} models={models} cameraPosition={[0, 0, 10]} targetPosition={[0, 1.1, 0]} />
         <Description traits={traits} />
         <div className={styles.buttonContainer}>
             <button onClick={generateCharacter} className={styles.footerRollButton}>🎲</button>
