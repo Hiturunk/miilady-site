@@ -309,6 +309,10 @@ font-family: "Fragment Mono", monospace;
   background-color: #b5bcc500;
   transition: transform 0.4s; 
   transform: scale(1); /* Default scale is 1 (no scaling) */
+  user-select: none; /* Standard syntax */
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE/Edge */
 }
 
 .rotateButtonRight:hover, .rotateButtonLeft:hover {
@@ -319,4 +323,9 @@ font-family: "Fragment Mono", monospace;
   margin-right: 10px;
   width: 100px;
   height: 100px;
+    pointer-events: none; /* This prevents any mouse events on the image */
+    user-select: none; /* Standard syntax */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE/Edge */
 }

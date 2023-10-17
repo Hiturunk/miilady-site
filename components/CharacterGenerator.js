@@ -110,6 +110,8 @@ const stopRotation = () => {
       <div className={styles.buttonRotateContainer}>
       <button 
     onMouseDown={() => startRotation('left')} 
+    onTouchStart={() => startRotation('left')} 
+    onTouchEnd={stopRotation}
     onMouseUp={stopRotation} 
     onMouseLeave={stopRotation}
     className={styles.rotateButtonRight} 
@@ -119,6 +121,8 @@ const stopRotation = () => {
 
 <button 
     onMouseDown={() => startRotation('right')} 
+    onTouchStart={() => startRotation('right')} 
+    onTouchEnd={stopRotation}
     onMouseUp={stopRotation} 
     onMouseLeave={stopRotation}
     className={styles.rotateButtonLeft}
