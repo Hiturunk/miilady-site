@@ -4,6 +4,11 @@ import MiiladyViewer from '../components/MiiladyViewer';
 import styles from '../styles/Home.module.css';
 import Image from 'next/image';
 
+// Console log the imported components/functions THIS IS TO DEBUG ISSUES WITH VERCEL 
+console.log("Description:", Description);
+console.log("MiiladyViewer:", MiiladyViewer);
+console.log("styles from Home.module.css:", styles);
+
 
 const mintCharacter = () => {
   alert("Mint button has been pressed");

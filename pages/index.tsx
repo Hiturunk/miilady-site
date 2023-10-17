@@ -6,6 +6,9 @@ import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import CharacterGenerator from '../components/CharacterGenerator';
 
+// Console log the imported components/functions
+console.log("CharacterGenerator:", CharacterGenerator);
+
 const Home: NextPage = () => {
   const [traits, setTraits] = useState([]);
 

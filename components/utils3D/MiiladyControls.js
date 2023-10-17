@@ -3,6 +3,11 @@ import { useRef, useEffect } from 'react';
 import { useFrame, useThree } from '@react-three/fiber';
 import { OrbitControls as OC } from '@react-three/drei';
 
+// Console log the imported components/functions
+console.log("useFrame:", useFrame);
+console.log("useThree:", useThree);
+console.log("OrbitControls from @react-three/drei:", OC);
+
 const MiiladyControls = ({ cameraPosition, targetPosition, fov = 20 }) => {
   const controlsRef = useRef();
   const { camera, gl } = useThree();
