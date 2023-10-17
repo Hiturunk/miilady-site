@@ -25,7 +25,7 @@ const Home: NextPage = () => {
       </Head>
 	  
       <main className={styles.main}>
-      <CharacterGenerator traits={traits} />
+      <CharacterGenerator />
       </main>
 	
     </div>
