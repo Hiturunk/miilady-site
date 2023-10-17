@@ -136,11 +136,6 @@ const stopRotation = () => {
         <button onClick={generateCharacter} className={styles.footerRollButton}>🎲</button>
         <button onClick={mintCharacter} className={styles.footerMintButton}>✓</button>
       </div>
-      <footer className={styles.footer}>
-        <div className={styles.logoWrapper}>
-          <Image src="/SVG/miilady_logo.svg" alt="Miilady Logo" className={styles.logo} width={100} height={100} />
-        </div>
-      </footer>
     </div>
   );
 }
