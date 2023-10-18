@@ -2,39 +2,53 @@
   "traits": [
     {
       "type": "Body",
-      "name": "Miilady_Demo",
+      "name": "Miilady Body Fair Skinned",
       "description": "MIILADY WITH ",
-      "model_name": "miilady_demo.gltf",
+      "model_name": "miilady_body_fair.gltf",
       "probability": 0.5
     },
     {
       "type": "Hair",
-      "name": "Short",
-      "description": "A SHORT BOB AYANAMI CUT ",
-      "model_name": "short_hair.gltf",
-      "probability": 0.5
+      "name": "Long Blue",
+      "description": "A LONG BLUE HAIRSTYLE ",
+      "model_name": "hair_long_blue.gltf",
+      "probability": 0.25
     },
     {
       "type": "Hair",
-      "name": "Long",
-      "description": "A PROPER HIME CUT ",
-      "model_name": "long_hair.gltf",
+      "name": "Long Auburn",
+      "description": "AN AUBURN LOOK ",
+      "model_name": "hair_long_auburn.gltf",
+      "probability": 0.25
+    },
+    {
+      "type": "Hair",
+      "name": "Long Black",
+      "description": "A LONG BLACK HAIRSTYLE ",
+      "model_name": "hair_long_black.gltf",
+      "probability": 0.25
+    },
+    {
+      "type": "Hair",
+      "name": "Long Blonde",
+      "description": "PURE BLONDE ",
+      "model_name": "hair_long_blonde.gltf",
+      "probability": 0.25
+    },	
+    {
+      "type": "Shirt",
+      "name": "Sailor Uniform",
+      "description": "ACCOMPANIED BY A NAUTICAL SAILOR OUTFIT, ",
+      "model_name": "miilady_uniform_sailor.gltf",
       "probability": 0.5
     },
     {
       "type": "Shirt",
-      "name": "Polka-dot",
-      "description": "ACCOMPANIED BY POLKA DOT LOVE, ",
-      "model_name": "polka_dot_shirt.gltf",
+      "name": "Nothing",
+      "description": "ACCOMPANIED BY ... nothing, ",
+      "model_name": "glasses_none.gltf",
       "probability": 0.5
-    },
-    {
-      "type": "Shirt",
-      "name": "Stripes",
-      "description": "COMPLIMENTED BY A STRIPED TOP, ",
-      "model_name": "stripes_shirt.gltf",
-      "probability": 0.5
-    },
+    },	
     {
       "type": "Skirt",
       "name": "Pleated",
@@ -46,14 +60,14 @@
       "type": "Skirt",
       "name": "Sporty",
       "description": "A SPORTY TENNIS SKIRT, ",
-      "model_name": "sporty_skirt.gltf",
+      "model_name": "glasses_none.gltf",
       "probability": 0.5
     },
     {
       "type": "Hat",
-      "name": "Cap",
-      "description": "THE SIGNATURE CAP, ",
-      "model_name": "cap_hat.gltf",
+      "name": "Fez",
+      "description": "A RELIGIOUS FEZ, ",
+      "model_name": "hat_fez.gltf",
       "probability": 0.5
     },
     {
@@ -68,14 +82,14 @@
       "name": "Red Boots",
       "description": "ICONIC RED BOOTS, ",
       "model_name": "boots_red.gltf",
-      "probability": 0.25
+      "probability": 0.5
     },
     {
       "type": "Footwear",
-      "name": "No shoes",
-      "description": "",
-      "model_name": "glasses_none.gltf",
-      "probability": 0.75
+      "name": "Blue Clogs",
+      "description": "THRIFTED BLUE CLOGS ",
+      "model_name": "shoes_clogs_blue.gltf",
+      "probability": 0.5
     },          
     {
       "type": "Glasses",
