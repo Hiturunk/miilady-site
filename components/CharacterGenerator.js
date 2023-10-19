@@ -3,6 +3,7 @@ import Description from '../components/Description';
 import MiiladyViewer from '../components/MiiladyViewer';
 import styles from '../styles/Home.module.css';
 import Image from 'next/image';
+import debounce from 'lodash/debounce';
 
 // Console log the imported components/functions THIS IS TO DEBUG ISSUES WITH VERCEL 
 console.log("Description:", Description);
@@ -19,13 +20,18 @@ function CharacterGenerator() {
   const [traits, setTraits] = useState([]);
   const [models, setModels] = useState([]);
   const [currentDirection, setCurrentDirection] = useState(null); // 'left' or 'right'
-
+  const [loading, setLoading] = useState(false);
 
   const generateCharacter = async () => {
+	setLoading(true);  
     const response = await fetch('/api/traits');
     const newTraits = await response.json();
     setTraits(newTraits);
+	setLoading(false);
   };
+
+    // Use Lodash's debounce OPTIONAL
+    const debouncedGenerateCharacter = debounce(generateCharacter, 100);
 
   useEffect(() => {
     generateCharacter();
@@ -105,8 +111,12 @@ const stopRotation = () => {
 
   return (
     <div>
+	  {loading ? <span className={styles.loadingIndicator}>Loading...</span> : null}   {/* Your loading indicator here */}	
+    
       <MiiladyViewer className={styles.MiiladyViewer} fov={10} models={models} cameraPosition={[0, 0, 10]} targetPosition={[0, 1.1, 0]} />
       <Description traits={traits} />
+	  
+	  
       <div className={styles.buttonRotateContainer}>
       <button 
     onMouseDown={() => startRotation('left')} 
@@ -133,7 +143,11 @@ const stopRotation = () => {
 </div>
 
       <div className={styles.buttonContainer}>
-        <button onClick={generateCharacter} className={styles.footerRollButton}>🎲</button>
+        <button 
+		onClick={debouncedGenerateCharacter} 
+		className={styles.footerRollButton}
+		disabled={loading}
+		>🎲</button>
         <button onClick={mintCharacter} className={styles.footerMintButton}>✓</button>
       </div>
     </div>

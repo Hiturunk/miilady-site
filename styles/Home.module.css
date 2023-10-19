@@ -217,3 +217,16 @@ font-family: "Fragment Mono", monospace;
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* IE/Edge */
 }
+
+.loadingIndicator {
+  position: fixed;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0px 0px;
+  background-color: rgba(0, 0, 0, 0.372), 0.7);
+  color: white;
+  border-radius: 5px;
+  z-index: 1000;
+  font-size: 1.2em;
+}
