@@ -9,10 +9,13 @@ const MiiladyViewer = ({
   cameraPosition = [0, 0, 5],
   targetPosition = [0, 1.2, 0],
 }) => {
-  const [dpr, setDpr] = useState([1, 1]);  // default to [1, 1]
+  const [dpr, setDpr] = useState([1, 1]);
 
   useEffect(() => {
-    setDpr([0.5, 0.5]);  // Setting it to half resolution
+    setDpr([0.5, 0.5]);
+    return () => {
+        console.log("MiiladyViewer is being unmounted.");
+    };
   }, []);
 
   return (

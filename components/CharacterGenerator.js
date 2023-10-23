@@ -2,8 +2,10 @@ import { useEffect, useState } from 'react';
 import Description from '../components/Description';
 import MiiladyViewer from '../components/MiiladyViewer';
 import styles from '../styles/Home.module.css';
-import Image from 'next/image';
 import debounce from 'lodash/debounce';
+import { LoadingQueueProvider, useLoadingQueue } from '../components/LoadingQueueContext'; // Adjust the path based on your project structure
+
+
 
 // Console log the imported components/functions THIS IS TO DEBUG ISSUES WITH VERCEL 
 console.log("Description:", Description);
@@ -21,6 +23,7 @@ function CharacterGenerator() {
   const [models, setModels] = useState([]);
   const [currentDirection, setCurrentDirection] = useState(null); // 'left' or 'right'
   const [loading, setLoading] = useState(false);
+  const { isLoading } = useLoadingQueue();
 
   const generateCharacter = async () => {
 	setLoading(true);  
@@ -54,6 +57,7 @@ function CharacterGenerator() {
     // Update the models state
     setModels(newModels);
   }, [traits]);
+  
 
   const [rotationInterval, setRotationInterval] = useState(null);
 
@@ -110,6 +114,7 @@ const stopRotation = () => {
   
 
   return (
+    <LoadingQueueProvider> 
     <div>
 	  {loading ? <span className={styles.loadingIndicator}>Loading...</span> : null}   {/* Your loading indicator here */}	
     
@@ -151,6 +156,7 @@ const stopRotation = () => {
         <button onClick={mintCharacter} className={styles.footerMintButton}>✓</button>
       </div>
     </div>
+    </LoadingQueueProvider>
   );
 }
 

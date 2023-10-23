@@ -2,9 +2,10 @@
 import { NextPage } from 'next';
 import { useState } from 'react';
 import Head from 'next/head';
-import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import CharacterGenerator from '../components/CharacterGenerator';
+import { LoadingQueueProvider, useLoadingQueue } from '../components/LoadingQueueContext'; // Adjust the path based on your project structure
+
 
 // Console log the imported components/functions
 console.log("CharacterGenerator:", CharacterGenerator);
@@ -25,7 +26,9 @@ const Home: NextPage = () => {
       </Head>
 	  
       <main className={styles.main}>
+      <LoadingQueueProvider> 
       <CharacterGenerator />
+      </LoadingQueueProvider> 
       </main>
 	
     </div>
