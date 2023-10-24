@@ -34,7 +34,7 @@ function CharacterGenerator() {
   };
 
     // Use Lodash's debounce OPTIONAL
-    const debouncedGenerateCharacter = debounce(generateCharacter, 100);
+    const debouncedGenerateCharacter = debounce(generateCharacter, 500);
 
   useEffect(() => {
     generateCharacter();
