@@ -118,7 +118,7 @@ const stopRotation = () => {
     <div>
 	  {loading ? <span className={styles.loadingIndicator}>Loading...</span> : null}   {/* Your loading indicator here */}	
     
-      <MiiladyViewer className={styles.MiiladyViewer} fov={10} models={models} cameraPosition={[0, 0, 10]} targetPosition={[0, 1.1, 0]} />
+      <MiiladyViewer className={styles.MiiladyViewer} fov={20} models={models} cameraPosition={[0, 0, 4.9]} targetPosition={[0, 1.1, 0]} />
       <Description traits={traits} />
 	  
 	  

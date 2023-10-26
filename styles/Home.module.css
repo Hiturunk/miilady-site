@@ -18,13 +18,17 @@
 }
 
 .gradientBackground {
-  background: linear-gradient(to bottom, #dcfaff 0%, #ffffff 52%, #b5bcc5 52.1%, #ffffff 100%);
+  background-image:linear-gradient(rgba(255, 133, 19, 0.164), rgba(74, 88, 136, 0.411)), 
+  url('/background_takeshita.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .buttonContainer {
   position: fixed;
   bottom: 1%;
-  right: 10px;
+  left: 10px;
   z-index: 3;
 } 
 
@@ -79,36 +83,47 @@
 }
   
 .Description {
-font-family: "Fragment Mono", monospace;	
+  font-family: "Fragment Mono", monospace;    
   position: absolute;
-  top: calc(50% - 22%);  /* adjust the px for vertical displacement */
-  left: calc(50% + 7%); /* adjust the px for horizontal displacement */
-  padding-right: 25%;
-  padding-top: 1%;
-  padding-bottom: 1%;
-  background-color: rgba(180, 180, 180, 0.2); /* Semi-transparent black */
-  color: black; /* Text color */
-  text-align: right;
+  bottom: calc(1%);  /* adjust for vertical displacement */
+  right: calc(1% + 1%); /* adjust for horizontal displacement */
+  width: auto; /* adjust this to your preference */
+  max-width: 300px; /* or whatever maximum width you desire */
+  padding-left: 1%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  background-color: rgba(255, 255, 255, 0.13); 
+  color: rgb(255, 255, 255); /* Text color */
+  text-align: left;
   z-index: 1;
   user-select: none;
+  backdrop-filter: blur(5px);
   image-rendering: pixelated;
   image-rendering: -moz-crisp-edges; /* Firefox */
   image-rendering: -webkit-crisp-edges; /* Webkit (Safari/Chrome) */
 }
 
+
 @media only screen and (max-width: 1024px) {
   .Description {
-  position: absolute;
-  top: calc(50% - 28%);  /* adjust the px for vertical displacement */
-  left: calc(50% + 7%); /* adjust the px for horizontal displacement */
-  padding-right: 2%;
-  padding-top: 1%;
-  padding-bottom: 1%;
-  background-color: rgba(180, 180, 180, 0.2); /* Semi-transparent black */
-  color: black; /* Text color */
-  text-align: right;
-  z-index: 1;
-  user-select: none;
+    font-family: "Fragment Mono", monospace;    
+    position: absolute;
+    bottom: calc(1%);  /* adjust for vertical displacement */
+    right: calc(1% + 1%); /* adjust for horizontal displacement */
+    width: auto; /* adjust this to your preference */
+    max-width: 300px; /* or whatever maximum width you desire */
+    padding-left: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: rgba(255, 255, 255, 0.13); 
+    color: rgb(255, 255, 255); /* Text color */
+    text-align: left;
+    z-index: 1;
+    user-select: none;
+    backdrop-filter: blur(5px);
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges; /* Firefox */
+    image-rendering: -webkit-crisp-edges; /* Webkit (Safari/Chrome) */
   }
 }
 
@@ -192,7 +207,7 @@ font-family: "Fragment Mono", monospace;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px 20px;
+  padding: 10px 40px;
   border: none;
   cursor: pointer;
   background-color: #b5bcc500;
