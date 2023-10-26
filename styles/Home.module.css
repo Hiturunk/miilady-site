@@ -12,9 +12,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  image-rendering: pixelated;
-  image-rendering: -moz-crisp-edges; 
-  image-rendering: -webkit-crisp-edges;
 }
 
 .gradientBackground {
@@ -57,9 +54,7 @@
 .canvas-container {
   width: 80vw;
   height: 80vh;
-  image-rendering: pixelated;
-  image-rendering: -moz-crisp-edges; 
-  image-rendering: -webkit-crisp-edges; 
+
 }
 
   
@@ -86,10 +81,11 @@
   font-family: "Fragment Mono", monospace;    
   position: absolute;
   bottom: calc(1%);  /* adjust for vertical displacement */
-  right: calc(1% + 1%); /* adjust for horizontal displacement */
+  right: 0%; /* adjust for horizontal displacement */
   width: auto; /* adjust this to your preference */
-  max-width: 300px; /* or whatever maximum width you desire */
+  max-width: 400px; /* or whatever maximum width you desire */
   padding-left: 1%;
+  padding-right: 1%;
   padding-top: 2%;
   padding-bottom: 2%;
   background-color: rgba(255, 255, 255, 0.13); 
@@ -98,9 +94,8 @@
   z-index: 1;
   user-select: none;
   backdrop-filter: blur(5px);
-  image-rendering: pixelated;
-  image-rendering: -moz-crisp-edges; /* Firefox */
-  image-rendering: -webkit-crisp-edges; /* Webkit (Safari/Chrome) */
+  border-bottom-left-radius: 10px;  /* adjust this value as needed */
+  border-top-left-radius: 10px; /* adjust this value as needed */  
 }
 
 

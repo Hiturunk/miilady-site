@@ -12,7 +12,7 @@ const MiiladyViewer = ({
   const [dpr, setDpr] = useState([1, 1]);
 
   useEffect(() => {
-    setDpr([0.5, 0.5]);
+    setDpr([1, 1]); //do 0.5 for half res
     return () => {
         console.log("MiiladyViewer is being unmounted.");
     };
