@@ -3,6 +3,11 @@ import { useRef, useEffect } from 'react';
 import { useFrame, useThree } from '@react-three/fiber';
 import { OrbitControls as OC } from '@react-three/drei';
 
+// Console log the imported components/functions
+console.log("useFrame:", useFrame);
+console.log("useThree:", useThree);
+console.log("OrbitControls from @react-three/drei:", OC);
+
 const MiiladyControls = ({ cameraPosition, targetPosition, fov = 20 }) => {
   const controlsRef = useRef();
   const { camera, gl } = useThree();
@@ -28,7 +33,7 @@ const MiiladyControls = ({ cameraPosition, targetPosition, fov = 20 }) => {
       autoRotate={false}
       enableZoom={false}
       enablePan={false}
-      enableRotate={true}
+      enableRotate={false}
       enableDamping={true}
       dampingFactor={0.04}
       maxPolarAngle={Math.PI / 2.1}

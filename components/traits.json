@@ -2,99 +2,113 @@
   "traits": [
     {
       "type": "Body",
-      "name": "Miilady_Demo",
-      "description": "MIILADY WITH ",
-      "model_name": "miilady_demo.gltf",
+      "name": "Miilady Body Fair Skinned",
+      "description": "BODY: FAIR SKINNED ",
+      "model_name": "miilady_body_fair.gltf",
       "probability": 0.5
     },
     {
       "type": "Hair",
-      "name": "Short",
-      "description": "SHORT BOB AYANAMI CUT ",
-      "model_name": "short_hair.gltf",
-      "probability": 0.5
+      "name": "Long Blue",
+      "description": "HAIRSTYLE: LONG BLUE ",
+      "model_name": "hair_long_blue.gltf",
+      "probability": 0.25
     },
     {
       "type": "Hair",
-      "name": "Long",
-      "description": "HIME CUT ",
-      "model_name": "long_hair.gltf",
+      "name": "Long Auburn",
+      "description": "HAIRSTYLE: AUBURN LOCKS ",
+      "model_name": "hair_long_auburn.gltf",
+      "probability": 0.25
+    },
+    {
+      "type": "Hair",
+      "name": "Long Black",
+      "description": "HAIRSTYLE: LONG BLACK ",
+      "model_name": "hair_long_black.gltf",
+      "probability": 0.25
+    },
+    {
+      "type": "Hair",
+      "name": "Long Blonde",
+      "description": "HAIRSTYLE: PURE BLONDE ",
+      "model_name": "hair_long_blonde.gltf",
+      "probability": 0.25
+    },	
+    {
+      "type": "Shirt",
+      "name": "Sailor Uniform",
+      "description": "SHIRT: SAILOR TOP",
+      "model_name": "miilady_uniform_sailor.gltf",
       "probability": 0.5
     },
     {
       "type": "Shirt",
-      "name": "Polka-dot",
-      "description": "POLKA DOT LOVE ",
-      "model_name": "polka_dot_shirt.gltf",
+      "name": "Nothing",
+      "description": "SHIRT: NONE",
+      "model_name": "glasses_none.gltf",
       "probability": 0.5
-    },
-    {
-      "type": "Shirt",
-      "name": "Stripes",
-      "description": "STRIPED TOP ",
-      "model_name": "stripes_shirt.gltf",
-      "probability": 0.5
-    },
+    },	
     {
       "type": "Skirt",
       "name": "Pleated",
-      "description": "PLEATED SKIRT ",
-      "model_name": "pleated_skirt.gltf",
+      "description": "SKIRT: PLEATED UNIFORM SKIRT",
+      "model_name": "glasses_none.gltf",
       "probability": 0.5
     },
     {
       "type": "Skirt",
       "name": "Sporty",
-      "description": "TENNIS SKIRT ",
-      "model_name": "sporty_skirt.gltf",
+      "description": "SKIRT: TENNIS ",
+      "model_name": "glasses_none.gltf",
       "probability": 0.5
     },
     {
       "type": "Hat",
-      "name": "Cap",
-      "description": "SIGNATURE CAP ",
-      "model_name": "cap_hat.gltf",
+      "name": "Fez",
+      "description": "HAT: TRADITIONAL FEZ",
+      "model_name": "hat_fez.gltf",
       "probability": 0.5
     },
     {
       "type": "Hat",
       "name": "Beret",
-      "description": "CHIC CLEMINTINE BERET ",
+      "description": "HAT: ORANGE BERET",
       "model_name": "beret_hat.gltf",
       "probability": 0.5
     },
     {
       "type": "Footwear",
       "name": "Red Boots",
-      "description": "ICONIC RED BOOTS ",
+      "description": "BOOTS: POST-MODERN RED ",
       "model_name": "boots_red.gltf",
-      "probability": 0.25
+      "probability": 0.5
     },
     {
       "type": "Footwear",
-      "name": "No shoes",
-      "description": "",
-      "model_name": "glasses_none.gltf",
-      "probability": 0.75
+      "name": "Blue Clogs",
+      "description": "SHOES: THRIFTED BLUE CLOGS ",
+      "model_name": "shoes_clogs_blue.gltf",
+      "probability": 0.5
     },          
     {
       "type": "Glasses",
       "name": "Round",
-      "description": "ROUNDED FRAME GLASSES ",
+      "description": "GLASSES: ROUNDED FRAMES",
       "model_name": "round_glasses.gltf",
       "probability": 0.5
     },
     {
       "type": "Glasses",
       "name": "Square",
-      "description": "SQUARE FRAMED SPECTACLES ",
+      "description": "GLASSES: SQUARE FRAMED",
       "model_name": "square_glasses.gltf",
       "probability": 0.5
     },
     {
       "type": "Glasses",
       "name": "None",
-      "description": "",
+      "description": "AND ANIME EYES THAT PERSUADE ME",
       "model_name": "glasses_none.gltf",
       "probability": 0.5
     }    

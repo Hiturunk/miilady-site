@@ -1,27 +1,32 @@
 // pages/index.tsx
 import { NextPage } from 'next';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Head from 'next/head';
-import Image from 'next/image';
-import { ConnectButton } from '@rainbow-me/rainbowkit';
 import styles from '../styles/Home.module.css';
 import CharacterGenerator from '../components/CharacterGenerator';
-import InformationWindow from '../components/InformationWindow';
+import { LoadingQueueProvider, useLoadingQueue } from '../components/LoadingQueueContext'; // Adjust the path based on your project structure
 
-const rollFunction = () => {
-  alert('Roll Button is clicked');
-}
 
-const mintFunction = () => {
-  alert('Mint Button is clicked');
-}
+// Console log the imported components/functions
+console.log("CharacterGenerator:", CharacterGenerator);
 
 const Home: NextPage = () => {
-  const [showInfo, setShowInfo] = useState(false);
+  const [traits, setTraits] = useState([]);
+  const [isMusicPlaying, setIsMusicPlaying] = useState(true); // New state for music control
 
-  const toggleInfoWindow = () => {
-    setShowInfo(!showInfo);
-  }
+  const mintFunction = () => {
+    alert('Mint Button is clicked');
+  };
+
+  useEffect(() => {
+    const audioElement = document.getElementById("background-music") as HTMLAudioElement;
+
+    if (isMusicPlaying) {
+      audioElement.play();
+    } else {
+      audioElement.pause();
+    }
+  }, [isMusicPlaying]);  
 
   return (
     <div className={`${styles.container} ${styles.gradientBackground}`}>
@@ -30,21 +35,24 @@ const Home: NextPage = () => {
         <meta content="Miilady NFT Minting Site" name="description" />
         <link href="/favicon.ico" rel="icon" />
       </Head>
+
+        {/* Music button */}
+        <button 
+        className={styles.musicButton} 
+        onClick={() => setIsMusicPlaying(!isMusicPlaying)}
+        style={{ position: 'absolute', top: '10px', right: '10px' }}>
+        {isMusicPlaying ? 'Mute' : 'Play'}
+      </button>
+
+      {/* Background music */}
+      <audio id="background-music" src="/sounds/00000000000.ogg" loop autoPlay></audio>    
 	  
-      <div className={styles.logoWrapper}>
-        <Image src="/SVG/miilady_logo.svg" alt="Logo" className={styles.logo} width={800} height={800} />
-      </div>
-
-      <div className={styles.buttonWrapper}>
-        <ConnectButton />
-      </div>
-
       <main className={styles.main}>
-        <CharacterGenerator />
+      <LoadingQueueProvider> 
+      <CharacterGenerator />
+      </LoadingQueueProvider> 
       </main>
-
-      <button className={styles.infoButton} onClick={toggleInfoWindow} aria-label="Information">ℹ️</button>
-      {showInfo && <InformationWindow text="Introducing Miilady! Dive into the maximalist metaverse of Miilady, where cel-shaded neochibi are imbued with Netspi energy. Inspired by Harajuku Street Style and crafted by state-of-the-art Neochibi render farms in Shenzhen, China. These lovepilled characters are digitally delivered as VRM, FBX, GLTF formats. Effortlessly merge high-tech with high fashion. Miilady is more than a project—it's a revolution, transforming users into digital pioneers who bring Harajuku's vibrant chaos into the metaverse. PLACEHOLDER" onClose={toggleInfoWindow} />}
+	
     </div>
   );
 };
