@@ -34,7 +34,28 @@
       "description": "HAIRSTYLE: PURE BLONDE ",
       "model_name": "hair_long_blonde.gltf",
       "probability": 0.25
-    },	
+    },
+    {
+      "type": "Hair",
+      "name": "Short Blue",
+      "description": "HAIRSTYLE: SHORT BLUE ",
+      "model_name": "hair_short_blue.gltf",
+      "probability": 0.25
+    },
+    {
+      "type": "Hair",
+      "name": "Short Dark Grey",
+      "description": "HAIRSTYLE: SHORT GREY ",
+      "model_name": "hair_short_darkgrey.gltf",
+      "probability": 0.25
+    },		
+    {
+      "type": "Hair",
+      "name": "Short Green",
+      "description": "HAIRSTYLE: SHORT GREEN",
+      "model_name": "hair_short_green.gltf",
+      "probability": 0.25
+    },			
     {
       "type": "Shirt",
       "name": "Sailor Uniform",
@@ -50,20 +71,34 @@
       "probability": 0.5
     },	
     {
-      "type": "Skirt",
-      "name": "Pleated",
+      "type": "Bottoms",
+      "name": "Denim Shorts",
+      "description": "SHORTS: DENIM AMERICANA",
+      "model_name": "pants_denimshorts.gltf",
+      "probability": 0.5
+    },	
+    {
+      "type": "Bottoms",
+      "name": "Pleated Skirt",
       "description": "SKIRT: PLEATED UNIFORM SKIRT",
       "model_name": "glasses_none.gltf",
       "probability": 0.5
     },
     {
-      "type": "Skirt",
-      "name": "Sporty",
+      "type": "Bottoms",
+      "name": "Sport Skirt",
       "description": "SKIRT: TENNIS ",
       "model_name": "glasses_none.gltf",
       "probability": 0.5
     },
     {
+      "type": "Hat",
+      "name": "Alien",
+      "description": "HAT: ALIEN",
+      "model_name": "cap_alien.gltf",
+      "probability": 0.5
+    },
+	{
       "type": "Hat",
       "name": "Fez",
       "description": "HAT: TRADITIONAL FEZ",
