@@ -8,6 +8,34 @@
       "probability": 0.5
     },
     {
+      "type": "Body",
+      "name": "Miilady Body Base",
+      "description": "BODY: PALE SKINNED ",
+      "model_name": "miilady_body_base.gltf",
+      "probability": 0.5
+    },	
+    {
+      "type": "Body",
+      "name": "Miilady Dark Skin Hazel Eyes",
+      "description": "DARK SKIN, HAZEL EYES ",
+      "model_name": "miilady_body_darkhazel.gltf",
+      "probability": 0.25
+    },	
+    {
+      "type": "Body",
+      "name": "Miilady Dark Skin Blue Eyes",
+      "description": "DARK SKIN, BLUE EYES ",
+      "model_name": "miilady_body_darkblue.gltf",
+      "probability": 0.25
+    },	
+    {
+      "type": "Body",
+      "name": "Miilady Dark Skin Blue Eyes",
+      "description": "TAN SKIN, GREY EYES ",
+      "model_name": "miilady_body_tangrey.gltf",
+      "probability": 0.3
+    },	
+    {
       "type": "Hair",
       "name": "Long Blue",
       "description": "HAIRSTYLE: LONG BLUE ",
@@ -48,14 +76,7 @@
       "description": "HAIRSTYLE: SHORT GREY ",
       "model_name": "hair_short_darkgrey.gltf",
       "probability": 0.25
-    },		
-    {
-      "type": "Hair",
-      "name": "Short Green",
-      "description": "HAIRSTYLE: SHORT GREEN",
-      "model_name": "hair_short_green.gltf",
-      "probability": 0.25
-    },			
+    },				
     {
       "type": "Shirt",
       "name": "Sailor Uniform",
@@ -65,11 +86,53 @@
     },
     {
       "type": "Shirt",
-      "name": "Nothing",
-      "description": "SHIRT: NONE",
-      "model_name": "glasses_none.gltf",
+      "name": "Lovers Shirt",
+      "description": "SHIRT: LOVERS",
+      "model_name": "shirt_lovers.gltf",
       "probability": 0.5
     },	
+    {
+      "type": "Shirt",
+      "name": "Punk Rock Shirt",
+      "description": "SHIRT: PUNK ROCK",
+      "model_name": "shirt_punkrock.gltf",
+      "probability": 0.5
+    },
+    {
+      "type": "Shirt",
+      "name": "Special People Shirt",
+      "description": "SHIRT: SPECIAL PLACES",
+      "model_name": "shirt_special.gltf",
+      "probability": 0.5
+    },	
+    {
+      "type": "Shirt",
+      "name": "Tye Dye Shirt",
+      "description": "SHIRT: TYE DYE",
+      "model_name": "shirt_tyedye.gltf",
+      "probability": 0.5
+    },	
+    {
+      "type": "Shirt",
+      "name": "Beer Tank",
+      "description": "TANK: BEER",
+      "model_name": "shirt_beertank.gltf",
+      "probability": 0.5
+    },	
+    {
+      "type": "Shirt",
+      "name": "Jesus Tank",
+      "description": "TANK: JESUS STENCIL",
+      "model_name": "shirt_jesustank.gltf",
+      "probability": 0.5
+    },	
+    {
+      "type": "Shirt",
+      "name": "Moouse Tank",
+      "description": "TANK: MOUSE",
+      "model_name": "shirt_mousetank.gltf",
+      "probability": 0.5
+    },		
     {
       "type": "Bottoms",
       "name": "Denim Shorts",
@@ -79,18 +142,11 @@
     },	
     {
       "type": "Bottoms",
-      "name": "Pleated Skirt",
-      "description": "SKIRT: PLEATED UNIFORM SKIRT",
-      "model_name": "glasses_none.gltf",
+      "name": "Clay Shorts",
+      "description": "SHORTS: TERRACOTTA",
+      "model_name": "pants_clayshorts.gltf",
       "probability": 0.5
-    },
-    {
-      "type": "Bottoms",
-      "name": "Sport Skirt",
-      "description": "SKIRT: TENNIS ",
-      "model_name": "glasses_none.gltf",
-      "probability": 0.5
-    },
+    },	
     {
       "type": "Hat",
       "name": "Alien",
@@ -113,19 +169,33 @@
       "probability": 0.5
     },
     {
-      "type": "Footwear",
-      "name": "Red Boots",
-      "description": "BOOTS: POST-MODERN RED ",
-      "model_name": "boots_red.gltf",
+      "type": "Hat",
+      "name": "Oasis Cap",
+      "description": "HAT: OASIS CAP",
+      "model_name": "cap_oasis.gltf",
       "probability": 0.5
-    },
+    },	
     {
       "type": "Footwear",
       "name": "Blue Clogs",
       "description": "SHOES: THRIFTED BLUE CLOGS ",
       "model_name": "shoes_clogs_blue.gltf",
       "probability": 0.5
-    },          
+    },  
+    {
+      "type": "ACCESSORY",
+      "name": "Gold Earnings",
+      "description": "EARINGS: GOLD HOOPS",
+      "model_name": "earings_gold.gltf",
+      "probability": 0.25
+    },
+    {
+      "type": "ACCESSORY",
+      "name": "None",
+      "description": "",
+      "model_name": "glasses_none.gltf",
+      "probability": 0.5
+    },		
     {
       "type": "Glasses",
       "name": "Round",
