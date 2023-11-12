@@ -152,8 +152,8 @@ const stopRotation = () => {
 		onClick={debouncedGenerateCharacter} 
 		className={styles.footerRollButton}
 		disabled={loading}
-		>🎲</button>
-        <button onClick={mintCharacter} className={styles.footerMintButton}>✓</button>
+		>Roll</button>
+        <button onClick={mintCharacter} className={styles.footerMintButton}>Mint</button>
       </div>
     </div>
     </LoadingQueueProvider>
