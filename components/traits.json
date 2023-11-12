@@ -184,17 +184,10 @@
     },  
     {
       "type": "ACCESSORY",
-<<<<<<< Updated upstream
-      "name": "Gold Earnings",
-      "description": "EARINGS: GOLD HOOPS",
-      "model_name": "earings_gold.gltf",
-      "probability": 0.25
-=======
       "name": "Gold Earrings",
       "description": "EARRINGS: GOLD HOOPS",
       "model_name": "earings_gold.gltf",
-      "probability": 0.06944444444444445
->>>>>>> Stashed changes
+      "probability": 0.5
     },
     {
       "type": "ACCESSORY",
