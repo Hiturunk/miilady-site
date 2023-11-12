@@ -27,6 +27,7 @@ const MiiladyModel = ({ url, position, rotation }) => {
     }
   }, [url, isLoading, queue]);
 
+<<<<<<< Updated upstream
   useEffect(() => {
     addToQueue(url);
   }, [url]);
@@ -55,6 +56,9 @@ const MiiladyModel = ({ url, position, rotation }) => {
   }, [url, gltf]);
 
   return gltf ? <primitive object={gltf.scene} position={position} rotation={rotation} /> : null;
+=======
+  return gltf ? <primitive ref={modelRef} object={gltf.scene} /> : null;
+>>>>>>> Stashed changes
 };
 
 export default MiiladyModel;

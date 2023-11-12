@@ -19,6 +19,11 @@ const mintCharacter = () => {
 
 
 function CharacterGenerator() {
+<<<<<<< Updated upstream
+=======
+  const [cameraPosition, setCameraPosition] = useState([4, 0, 8]);
+  const targetPosition = [0, 5, 0]; // Set the target position for the camera
+>>>>>>> Stashed changes
   const [traits, setTraits] = useState([]);
   const [models, setModels] = useState([]);
   const [currentDirection, setCurrentDirection] = useState(null); // 'left' or 'right'
@@ -42,12 +47,17 @@ function CharacterGenerator() {
 
   // This will run whenever `traits` changes
   useEffect(() => {
+<<<<<<< Updated upstream
     // For now we'll just set every model at the same position and rotation, 
     // you might want to update this to position your models correctly in the scene
     const defaultPosition = [0, 0.25, 0];
     const defaultRotation = [Math.PI / 0.5, 1.5708, 0];
 
     // Create a new models array by mapping over traits
+=======
+    // Update models when traits change
+    const defaultPosition = [0, 0, 0];
+>>>>>>> Stashed changes
     const newModels = traits.map(trait => ({
       url: `/3D/${trait.model_name}`,
       position: defaultPosition,
@@ -134,6 +144,7 @@ const stopRotation = () => {
     <img src="/icons/Icon_RightArrow.png" alt="Rotate Right" className={styles.icon} />
 </button>
 
+<<<<<<< Updated upstream
 <button 
     onMouseDown={() => startRotation('right')} 
     onTouchStart={() => startRotation('right')} 
@@ -144,6 +155,15 @@ const stopRotation = () => {
 >
     <img src="/icons/Icon_LeftArrow.png" alt="Rotate Left" className={styles.icon} />
 </button>
+=======
+       <MiiladyViewer
+        className={styles.MiiladyViewer}
+        fov={13}
+        models={models}
+        cameraPosition={cameraPosition}
+        targetPosition={targetPosition} // Use targetPosition instead of cameraRotation
+      />
+>>>>>>> Stashed changes
 
 </div>
 
