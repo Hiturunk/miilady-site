@@ -3,11 +3,16 @@ import { Suspense } from 'react';
 import MiiladyModel from './MiiladyModel';
 import CameraControl from './CameraControl';
 
-const MiiladyViewer = ({ fov, models, cameraPosition, targetPosition = [0, 0, 0] }) => {
+const MiiladyViewer = ({ fov, models, cameraPosition, targetPosition = [0, 0, 0], enablePanning = false, enableZoom = false }) => {
   return (
     <div style={{ position: 'relative', zIndex: 2, width: '100vw', height: '75vh' }}>
       <Canvas>
-        <CameraControl cameraPosition={cameraPosition} fov={fov} />
+        <CameraControl 
+          cameraPosition={cameraPosition} 
+          fov={fov} 
+          enablePanning={enablePanning} 
+          enableZoom={enableZoom} 
+        />
         <ambientLight intensity={0.5} />
         <directionalLight position={[0, 0, 5]} />
         <Suspense fallback={null}>

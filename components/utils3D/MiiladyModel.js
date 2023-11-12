@@ -3,7 +3,7 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import { useFrame } from '@react-three/fiber';
 import { useLoadingQueue } from '../LoadingQueueContext';
 
-const MiiladyModel = ({ url, initialRotation = { x: 0, y: 1.5708, z: 0 } }) => {
+const MiiladyModel = ({ url, initialRotation = { x: 0, y: 2, z: 0 } }) => {
   const { isLoading, setIsLoading } = useLoadingQueue();
   const [gltf, setGltf] = useState(null);
   const modelRef = useRef();
