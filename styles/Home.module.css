@@ -15,8 +15,8 @@
 }
 
 .gradientBackground {
-  background-image:linear-gradient(rgba(255, 133, 19, 0.164), rgba(74, 88, 136, 0.411)), 
-  url('/background_takeshita.jpg');
+  background-image:linear-gradient(rgba(133, 133, 133, 0.164), rgba(74, 88, 136, 0.411)), 
+  url('/background_whitespace.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -80,13 +80,15 @@
   max-width: 400px; /* Maximum width */
   padding: 2% 1%; /* Simplified padding */
   background-color: rgba(255, 255, 255, 0.13);
-  color: rgb(255, 255, 255); /* Text color */
+  color: rgb(0, 0, 0); /* Text color */
   text-align: left;
   z-index: 1;
   user-select: none;
   backdrop-filter: blur(5px);
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3), 
+              inset 3px 3px 4px rgba(255, 255, 255, 0.4); /* Neumorphic inner shadow */
 }
 
 @media only screen and (max-width: 1024px) {
@@ -105,15 +107,18 @@
 
 
 .footerMintButton, .footerRollButton {
-  background-color: rgba(256, 256, 256, 0.2); /* Translucent grey */
-  color: #ffffff; /* Text color changed to black for visibility */
+  font-family: "Fragment Mono", monospace;
+  font-weight: bold;
+  background-color: rgba(200, 200, 200, 0.2); /* Translucent grey */
+  color: rgba(256, 256, 256, 0.9); 
   border: none;
   border-radius: 10px; /* Slightly rounded edges */
   cursor: pointer;
   margin: 0 10px;
   font-size: 100%; 
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3), 
+  transition: background-color 0.3s ease, color 0.3s ease, width 0.3s ease, height 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3),
+			  0 0 2px 2px rgba(255, 255, 255, 0.3),
               inset 3px 3px 4px rgba(255, 255, 255, 0.4); /* Neumorphic inner shadow */
   backdrop-filter: blur(15px); /* Blurred background */
   position: fixed;
@@ -126,6 +131,12 @@
   text-align: center; /* Ensure text is centered */
 }
 
+@media (min-width: 768px) {
+  .footerMintButton, .footerRollButton {
+    font-size: 130%; /* Larger font size for desktops */
+  }
+}
+
 .footerMintButton {
   right: 20vw;
 }
@@ -135,7 +146,23 @@
 }
 
 .footerMintButton:hover, .footerRollButton:hover {
-  background-color: rgba(160, 160, 160, 0.3); /* Darken on hover */
+  background-color: rgba(180, 180, 180, 0.1); 
+  color: rgba(256, 256, 256, 1); 
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3), 
+			  0 0 2px 2px rgba(255, 255, 255, 0.3),
+              inset 4px 4px 8px rgba(255, 255, 255, 0.4); /* Neumorphic inner shadow */
+  width: 19.9vw; /* Adjust width as needed */
+  height: 4.9vh; /* Adjust height as needed */
+}
+
+.footerMintButton:active, .footerRollButton:active {
+  background-color: rgba(180, 180, 180, 0.1); 
+  color: rgba(256, 256, 256, 1); 
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3), 
+			  0 0 2px 2px rgba(255, 255, 255, 0.3),
+              inset 4px 4px 8px rgba(255, 255, 255, 0.4); /* Neumorphic inner shadow */
+  width: 19.5vw; /* Adjust width as needed */
+  height: 4.5vh; /* Adjust height as needed */
 }
 
 
