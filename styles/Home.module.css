@@ -15,7 +15,7 @@
 }
 
 .gradientBackground {
-  background-image:linear-gradient(rgba(133, 133, 133, 0.164), rgba(74, 88, 136, 0.411)), 
+  background-image:linear-gradient(rgba(74, 88, 133, 0.164), rgba(74, 88, 136, 0.411)), 
   url('/background_whitespace.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -80,15 +80,16 @@
   max-width: 400px; /* Maximum width */
   padding: 2% 1%; /* Simplified padding */
   background-color: rgba(255, 255, 255, 0.13);
-  color: rgb(0, 0, 0); /* Text color */
+  color: rgb(112, 112, 112); /* Text color */
   text-align: left;
   z-index: 1;
   user-select: none;
   backdrop-filter: blur(5px);
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3), 
-              inset 3px 3px 4px rgba(255, 255, 255, 0.4); /* Neumorphic inner shadow */
+  box-shadow: 3px 3px 5px rgba(172, 172, 172, 0.3), 
+              inset 3px 3px 8px rgba(158, 158, 158, 0.4); /* Neumorphic inner shadow */
+  text-shadow: 0.5px 0.5px 1px rgba(255, 255, 255, 0.8); /* Drop shadow for text */            
 }
 
 @media only screen and (max-width: 1024px) {
