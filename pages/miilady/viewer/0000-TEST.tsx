@@ -34,11 +34,11 @@ function Model() {
 }
 
 export default function Viewer() {
-  const cameraRef = useRef();
-  const controlsRef = useRef();
+  const cameraRef = useRef<THREE.Camera>(null);
+  const controlsRef = useRef<OrbitControls>(null);
 
   // Adjust these values as needed for your model
-  const cameraPosition = [0, 1, 2]; // This sets the distance of the camera from the model
+  const cameraPosition: [number, number, number] = [0, 1, 2];
   const fov = 50; // Field of view
 
   return (
