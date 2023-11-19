@@ -1,13 +1,13 @@
 import React, { Suspense, useRef, useEffect } from 'react';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import { OrbitControls, useGLTF } from '@react-three/drei';
-import styles from '/styles/ModelViewer.module.css'; // adjust the path as necessary
+import styles from '/styles/ModelViewer.module.css';
 import * as THREE from 'three';
 
 function Model() {
   const model = useGLTF('/NFT/0000-TEST/0000-ANIMATED.gltf');
   const modelRef = useRef<THREE.Object3D>(null);
-  const mixer = useRef<THREE.AnimationMixer | null>(null); // Correct type for mixer
+  const mixer = useRef<THREE.AnimationMixer | null>(null);
 
   useEffect(() => {
     if (modelRef.current) {
@@ -33,34 +33,38 @@ function Model() {
   return <primitive object={model.scene} ref={modelRef} />;
 }
 
+function CameraController() {
+  const { camera } = useThree(); // Now used within the Canvas scope
+
+  const cameraPosition: [number, number, number] = [0, 1, 2];
+  const fov = 50;
+
+  useEffect(() => {
+    if (camera instanceof THREE.PerspectiveCamera) {
+      camera.fov = fov;
+      camera.position.set(...cameraPosition);
+      camera.updateProjectionMatrix();
+    }
+  }, [camera, fov, cameraPosition]);
+
+  return <OrbitControls 
+            enableZoom={false}
+            enablePan={false}
+            maxPolarAngle={Math.PI / 1.5}
+            minPolarAngle={1}
+            target={[0, 1, 0]}
+         />;
+}
+
 export default function Viewer() {
-  // Using React.ComponentProps to get the correct type for OrbitControls ref
-  const controlsRef = useRef<React.ComponentProps<typeof OrbitControls>>(null);
-
-  const cameraPosition: [number, number, number] = [0, 1, 2]; // Camera position as a tuple
-  const fov = 50; // Field of view
-
   return (
     <div className={styles.viewerContainer}>
-      <Canvas 
-        className={styles.canvas} 
-        camera={{ 
-          fov: fov,
-          position: cameraPosition
-        }}
-      >
+      <Canvas className={styles.canvas}>
         <ambientLight intensity={0.5} />
         <Suspense fallback={null}>
           <Model />
         </Suspense>
-        <OrbitControls 
-          ref={controlsRef}
-          enableZoom={false}
-          enablePan={false}
-          maxPolarAngle={Math.PI / 1.5}
-          minPolarAngle={1}
-          target={[0, 1, 0]} 
-        />
+        <CameraController /> {/* CameraController is now a child of Canvas */}
       </Canvas>
     </div>
   );
