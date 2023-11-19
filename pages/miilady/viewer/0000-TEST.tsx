@@ -1,4 +1,4 @@
-import React, { Suspense, useRef, useEffect, useMemo } from 'react';
+import React, { Suspense, useRef, useEffect } from 'react';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import { OrbitControls, useGLTF } from '@react-three/drei';
 import styles from '/styles/ModelViewer.module.css';
@@ -36,7 +36,7 @@ function Model() {
 function CameraController() {
   const { camera } = useThree(); // Now used within the Canvas scope
 
-  const cameraPosition = useMemo(() => [0, 1, 2], []);
+  const cameraPosition: [number, number, number] = [0, 1, 2];
   const fov = 50;
 
   useEffect(() => {
@@ -57,17 +57,14 @@ function CameraController() {
 }
 
 export default function Viewer() {
-  const [loading, setLoading] = React.useState(true);
-
   return (
     <div className={styles.viewerContainer}>
-      {loading && <div className={styles.loadingText}>Loading...</div>}
-      <Canvas className={styles.canvas} onCreated={() => setLoading(false)}>
+      <Canvas className={styles.canvas}>
         <ambientLight intensity={0.5} />
         <Suspense fallback={null}>
           <Model />
         </Suspense>
-        <CameraController />
+        <CameraController /> {/* CameraController is now a child of Canvas */}
       </Canvas>
     </div>
   );
