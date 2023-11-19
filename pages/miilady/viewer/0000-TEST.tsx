@@ -34,8 +34,8 @@ function Model() {
 }
 
 export default function Viewer() {
-  const cameraRef = useRef<THREE.Camera>(null);
-  const controlsRef = useRef<typeof OrbitControls>(null); // Updated type reference
+  const cameraRef = useRef<THREE.PerspectiveCamera>(null); // Updated camera type
+  const controlsRef = useRef<typeof OrbitControls>(null); // Type for OrbitControls reference
 
   const cameraPosition: [number, number, number] = [0, 1, 2]; // Camera position as a tuple
   const fov = 50; // Field of view
