@@ -1,5 +1,5 @@
 import React, { Suspense, useRef, useEffect } from 'react';
-import { Canvas, useFrame } from '@react-three/fiber';
+import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import { OrbitControls, useGLTF } from '@react-three/drei';
 import styles from '/styles/ModelViewer.module.css'; // adjust the path as necessary
 import * as THREE from 'three';
@@ -34,7 +34,6 @@ function Model() {
 }
 
 export default function Viewer() {
-  const cameraRef = useRef<THREE.PerspectiveCamera>(null); // Updated camera type
   const controlsRef = useRef<typeof OrbitControls>(null); // Type for OrbitControls reference
 
   const cameraPosition: [number, number, number] = [0, 1, 2]; // Camera position as a tuple
@@ -46,8 +45,7 @@ export default function Viewer() {
         className={styles.canvas} 
         camera={{ 
           fov: fov,
-          position: cameraPosition, 
-          ref: cameraRef 
+          position: cameraPosition
         }}
       >
         <ambientLight intensity={0.5} />
