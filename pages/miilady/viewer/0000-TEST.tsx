@@ -7,14 +7,14 @@ import * as THREE from 'three';
 function Model() {
   const model = useGLTF('/NFT/0000-TEST/0000-ANIMATED.gltf');
   const modelRef = useRef<THREE.Object3D>(null);
-  const mixer = useRef();
+  const mixer = useRef<THREE.AnimationMixer | null>(null); // Correct type for mixer
 
   useEffect(() => {
     if (modelRef.current) {
       // Set initial rotation
-      const xRotation = 0; // e.g., Math.PI / 2 for 90 degrees
-      const yRotation = 1.6; // e.g., Math.PI for 180 degrees
-      const zRotation = 0; // e.g., Math.PI / 4 for 45 degrees
+      const xRotation = 0; 
+      const yRotation = 1.6;
+      const zRotation = 0;
       modelRef.current.rotation.set(xRotation, yRotation, zRotation);
 
       // Animation setup
