@@ -1,4 +1,4 @@
-import React, { Suspense, useRef, useEffect } from 'react';
+import React, { Suspense, useRef, useEffect, useMemo } from 'react';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import { OrbitControls, useGLTF } from '@react-three/drei';
 import styles from '/styles/ModelViewer.module.css';
@@ -36,7 +36,7 @@ function Model() {
 function CameraController() {
   const { camera } = useThree(); // Now used within the Canvas scope
 
-  const cameraPosition: [number, number, number] = [0, 1, 2];
+  const cameraPosition = useMemo(() => [0, 1, 2], []);
   const fov = 50;
 
   useEffect(() => {

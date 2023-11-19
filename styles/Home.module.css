@@ -15,8 +15,8 @@
 }
 
 .gradientBackground {
-  background-image:linear-gradient(rgba(74, 88, 133, 0.164), rgba(74, 88, 136, 0.411)), 
-  url('/background_whitespace.jpg');
+  background-image:linear-gradient(rgba(255, 255, 255, 0.164), rgba(134, 157, 234, 0.311)), 
+  url('/background_whitespace_var.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -74,23 +74,23 @@
 .Description {
   font-family: "Fragment Mono", monospace;
   position: absolute;
-  top: 1%; /* Adjusted for top right */
-  right: 0%; /* Consistent right padding */
+  top: 1%; 
+  right: 0%; 
   width: auto;
-  max-width: 400px; /* Maximum width */
-  padding: 2% 1%; /* Simplified padding */
-  background-color: rgba(255, 255, 255, 0.13);
-  color: rgb(112, 112, 112); /* Text color */
+  max-width: 400px; 
+  padding: 3% 3%; 
+  background-color: rgba(255, 255, 255, 0.1);
+  color: rgb(0, 0, 0, 0.75); 
   text-align: left;
   z-index: 1;
   user-select: none;
-  backdrop-filter: blur(5px);
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
-  box-shadow: 3px 3px 5px rgba(172, 172, 172, 0.3), 
-              inset 3px 3px 8px rgba(158, 158, 158, 0.4); /* Neumorphic inner shadow */
-  text-shadow: 0.5px 0.5px 1px rgba(255, 255, 255, 0.8); /* Drop shadow for text */            
+  box-shadow: inset -0.2rem -0.2rem 1.2rem rgba(255, 255, 255, 0.8), 
+  inset 0.2rem 0.2rem 0.5rem rgba(77, 77, 77, 0.4);
+  
 }
+
 
 @media only screen and (max-width: 1024px) {
   .Description {
@@ -109,19 +109,18 @@
 
 .footerMintButton, .footerRollButton {
   font-family: "Fragment Mono", monospace;
-  font-weight: bold;
-  background-color: rgba(200, 200, 200, 0.2); 
-  color: rgba(256, 256, 256, 0.9); 
+  font-weight: regular;
+  background-color: rgba(255, 255, 255, 0.25); 
+  color: rgb(35, 35, 35); 
   border: none;
   border-radius: 10px; /* Slightly rounded */
   cursor: pointer;
   margin: 0 10px;
   font-size: 100%; 
-  transition: background-color 0.3s ease, color 0.3s ease, width 0.3s ease, height 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3),
-			  0 0 2px 2px rgba(255, 255, 255, 0.3),
-              inset 3px 3px 4px rgba(255, 255, 255, 0.4); /* Neumorphic inner shadow */
-  backdrop-filter: blur(15px); 
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: -0.075rem -0.075rem 0.5rem rgba(255, 255, 255, 1), 
+  0.075rem 0.075rem 0.5rem rgba(8, 8, 8, 0.35); 
+  backdrop-filter: blur(5px); 
   position: fixed;
   bottom: 6vh;
   width: 20vw; 
@@ -147,24 +146,23 @@
   left: 20vw;
 }
 
-.footerMintButton:hover, .footerRollButton:hover {
-  background-color: rgba(180, 180, 180, 0.1); 
-  color: rgba(256, 256, 256, 1); 
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3), 
-			  0 0 2px 2px rgba(255, 255, 255, 0.3),
-              inset 4px 4px 8px rgba(255, 255, 255, 0.4); /* Neumorphic inner shadow */
-  width: 19.9vw; 
-  height: 4.9vh; 
+.footerMintButton:hover {
+  background-color: rgba(244, 244, 244, 0.6); 
+  color: rgb(121, 193, 135); 
+  box-shadow: -0.075rem -0.075rem 0.1rem rgba(255, 255, 255, 0.4), 
+  0.075rem 0.075rem 0.1rem rgba(8, 8, 8, 0.5);
+}
+
+.footerRollButton:hover {
+  background-color: rgba(244, 244, 244, 0.6); 
+  color: rgb(92, 92, 92); 
+  box-shadow: -0.075rem -0.075rem 0.1rem rgba(255, 255, 255, 0.4), 
+  0.075rem 0.075rem 0.1rem rgba(8, 8, 8, 0.5);
 }
 
 .footerMintButton:active, .footerRollButton:active {
   background-color: rgba(180, 180, 180, 0.1); 
-  color: rgba(256, 256, 256, 1); 
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3), 
-			  0 0 2px 2px rgba(255, 255, 255, 0.3),
-              inset 4px 4px 8px rgba(255, 255, 255, 0.4); /* Neumorphic inner shadow */
-  width: 19.5vw; 
-  height: 4.5vh; 
+  color: rgb(112, 112, 112);  
 }
 
 

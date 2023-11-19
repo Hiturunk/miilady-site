@@ -149,31 +149,31 @@
     },	
     {
       "type": "Hat",
+      "name": "No Hat",
+      "description": "HAT: NONE",
+      "model_name": "glasses_none.gltf",
+      "probability": 0.5
+    },    
+    {
+      "type": "Hat",
       "name": "Alien",
       "description": "HAT: ALIEN",
       "model_name": "cap_alien.gltf",
-      "probability": 0.5
+      "probability": 0.25
     },
 	{
       "type": "Hat",
       "name": "Fez",
       "description": "HAT: TRADITIONAL FEZ",
       "model_name": "hat_fez.gltf",
-      "probability": 0.5
-    },
-    {
-      "type": "Hat",
-      "name": "Beret",
-      "description": "HAT: ORANGE BERET",
-      "model_name": "beret_hat.gltf",
-      "probability": 0.5
+      "probability": 0.25
     },
     {
       "type": "Hat",
       "name": "Oasis Cap",
       "description": "HAT: OASIS CAP",
       "model_name": "cap_oasis.gltf",
-      "probability": 0.5
+      "probability": 0.25
     },	
     {
       "type": "Footwear",
@@ -188,32 +188,11 @@
       "description": "EARRINGS: GOLD HOOPS",
       "model_name": "earings_gold.gltf",
       "probability": 0.5
-    },
+    },	
     {
-      "type": "ACCESSORY",
+      "type": "Eyewear",
       "name": "None",
       "description": "",
-      "model_name": "glasses_none.gltf",
-      "probability": 0.5
-    },		
-    {
-      "type": "Glasses",
-      "name": "Round",
-      "description": "GLASSES: ROUNDED FRAMES",
-      "model_name": "round_glasses.gltf",
-      "probability": 0.5
-    },
-    {
-      "type": "Glasses",
-      "name": "Square",
-      "description": "GLASSES: SQUARE FRAMED",
-      "model_name": "square_glasses.gltf",
-      "probability": 0.5
-    },
-    {
-      "type": "Glasses",
-      "name": "None",
-      "description": "AND ANIME EYES THAT PERSUADE ME",
       "model_name": "glasses_none.gltf",
       "probability": 0.5
     }    
