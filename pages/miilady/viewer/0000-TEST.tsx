@@ -35,10 +35,9 @@ function Model() {
 
 export default function Viewer() {
   const cameraRef = useRef<THREE.Camera>(null);
-  const controlsRef = useRef<OrbitControls>(null);
+  const controlsRef = useRef<typeof OrbitControls>(null); // Updated type reference
 
-  // Adjust these values as needed for your model
-  const cameraPosition: [number, number, number] = [0, 1, 2];
+  const cameraPosition: [number, number, number] = [0, 1, 2]; // Camera position as a tuple
   const fov = 50; // Field of view
 
   return (
@@ -59,8 +58,8 @@ export default function Viewer() {
           ref={controlsRef}
           enableZoom={false}
           enablePan={false}
-          maxPolarAngle={Math.PI / 1.5} // Limit the vertical rotation to the upper hemisphere
-          minPolarAngle={1}            // Prevent the camera from going below the horizon
+          maxPolarAngle={Math.PI / 1.5}
+          minPolarAngle={1}
           target={[0, 1, 0]} 
         />
       </Canvas>
