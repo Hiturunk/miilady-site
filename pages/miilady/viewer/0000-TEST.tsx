@@ -34,7 +34,8 @@ function Model() {
 }
 
 export default function Viewer() {
-  const controlsRef = useRef<typeof OrbitControls>(null); // Type for OrbitControls reference
+  // Using React.ComponentProps to get the correct type for OrbitControls ref
+  const controlsRef = useRef<React.ComponentProps<typeof OrbitControls>>(null);
 
   const cameraPosition: [number, number, number] = [0, 1, 2]; // Camera position as a tuple
   const fov = 50; // Field of view
