@@ -57,14 +57,17 @@ function CameraController() {
 }
 
 export default function Viewer() {
+  const [loading, setLoading] = React.useState(true);
+
   return (
     <div className={styles.viewerContainer}>
-      <Canvas className={styles.canvas}>
+      {loading && <div className={styles.loadingText}>Loading...</div>}
+      <Canvas className={styles.canvas} onCreated={() => setLoading(false)}>
         <ambientLight intensity={0.5} />
         <Suspense fallback={null}>
           <Model />
         </Suspense>
-        <CameraController /> {/* CameraController is now a child of Canvas */}
+        <CameraController />
       </Canvas>
     </div>
   );
