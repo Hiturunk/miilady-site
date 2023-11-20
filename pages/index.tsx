@@ -11,10 +11,6 @@ console.log("CharacterGenerator:", CharacterGenerator);
 const Home: NextPage = () => {
   const [traits, setTraits] = useState([]);
 
-  const mintFunction = () => {
-    alert('Mint Button is clicked');
-  };
-
   return (
     <div className={`${styles.container} ${styles.gradientBackground}`}>
       <Head>

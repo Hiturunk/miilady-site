@@ -1,0 +1,59 @@
+.mintConfirmationContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(233, 233, 233, 0.5);
+  z-index: 50;
+  backdrop-filter: blur(5px); /* Adding blur effect */
+}
+
+.mintConfirmationContent {
+  font-family: "Fragment Mono", monospace;
+  background-color: rgb(241, 241, 241); /* Semi-transparent background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: inset -0.4rem -0.4rem 1rem rgba(255, 255, 255, 1), 
+  inset 0.2rem 0.2rem 0.5rem rgba(77, 77, 77, 0.2);
+  max-width: 500px;
+  width: 100%;
+  z-index: 500;
+  text-align: center;
+}
+
+.mintConfirmationContent h2 {
+  margin-top: 0;
+}
+
+.closeButton, .createButton {
+  font-family: "Fragment Mono", monospace;
+  font-weight: regular;
+  background-color: rgba(255, 255, 255, 1);
+  color: rgb(35, 35, 35);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 10px;
+  font-size: 100%;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: -0.1rem -0.1rem 0.25rem rgb(255, 255, 255), 
+              0.075rem 0.075rem 0.5rem rgba(8, 8, 8, 0.35);
+  padding: 10px 15px;
+}
+
+.closeButton:hover {
+  background-color: rgb(250, 250, 250, 0.75);
+  box-shadow: -0.075rem -0.075rem 0.1rem rgba(255, 255, 255, 0.4), 
+  0.075rem 0.075rem 0.25rem rgba(8, 8, 8, 0.25);
+}
+
+.createButton:hover {
+  background-color: rgb(250, 250, 250, 0.75);
+  box-shadow: -0.075rem -0.075rem 0.1rem rgba(255, 255, 255, 0.4), 
+  0.075rem 0.075rem 0.25rem rgba(8, 8, 8, 0.25);
+  color: rgb(110, 165, 120);
+}
