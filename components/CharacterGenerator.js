@@ -12,7 +12,7 @@ const mintCharacter = () => {
 };
 
 function CharacterGenerator() {
-  const [cameraPosition, setCameraPosition] = useState([4, 0, 8]);
+  const [cameraPosition, setCameraPosition] = useState([3.5, 0, 8.25]);
   const targetPosition = [0, 5, 0]; // Set the target position for the camera
   const [traits, setTraits] = useState([]);
   const [currentTraits, setCurrentTraits] = useState([]); // New state to store the current traits

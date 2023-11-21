@@ -13,8 +13,7 @@ const MiiladyViewer = ({ fov, models, cameraPosition, targetPosition = [0, 0, 0]
           enablePanning={enablePanning} 
           enableZoom={enableZoom} 
         />
-        <ambientLight intensity={0.5} />
-        <directionalLight position={[0, 0, 5]} />
+        <ambientLight intensity={1.5} />
         <Suspense fallback={null}>
           {models.map((model, index) => (
             <MiiladyModel key={index} url={model.url} position={model.position} />
