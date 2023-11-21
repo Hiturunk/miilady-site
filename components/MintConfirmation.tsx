@@ -1,8 +1,13 @@
 import React from 'react';
-import styles from '../styles/MintConfirmation.module.css'; // Import or define your styles
+import styles from '../styles/MintConfirmation.module.css';
 
+// Define the types for your component's props
+interface MintConfirmationProps {
+  onClose: () => void; // Assuming it's a function that returns nothing
+  onCreate: () => void; // Same assumption
+}
 
-const MintConfirmation = ({ onClose, onCreate }) => {
+const MintConfirmation = ({ onClose, onCreate }: MintConfirmationProps) => {
   return (
     <div className={styles.mintConfirmationContainer}>
       <div className={styles.mintConfirmationContent}>
